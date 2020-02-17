@@ -1,0 +1,94 @@
+.Hud {
+	width: 100%;
+	height: 100%;
+}
+
+#ChooseBossButton {
+	horizontal-align: center;
+	vertical-align: top;
+	width: 300px;
+	height: 70px;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #e0c59a ), to( #ae9249 ) );
+	border: 4px solid black;
+	margin-top: 55px;
+	border-radius: 15px;
+	visibility:collapse; 
+}
+
+#ChooseBossButton:Hover {
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #e0959a ), to( #ae6249 ) );	
+}
+	
+#ChooseBossButtonText {
+	horizontal-align: center;
+	vertical-align: center;
+	color: white;
+	font-size: 25px;
+}
+
+#ChooseBossContainer {
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 250px;
+	flow-children: down;
+	visibility:collapse;
+}
+
+#ChooseBossPanel {
+	flow-children: right;
+}
+
+#BossInfo {
+	width: 100%;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #5A615Ecc ), to( #879695cc ));
+	flow-children: down;
+	padding: 25px;
+	border: 6px solid black;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+#BossName {
+	horizontal-align: center;
+	color: white;
+	font-size: 35px;
+}
+
+#border {
+	width: 100%;
+	height: 3px;
+	background-color: black;
+}
+
+#BossDescription {
+	margin-top: 25px;
+	font-size: 25px;
+	color: white;
+}
+
+#Osobenosti{
+	margin-top: 15px;
+	margin-bottom: 5px;
+	font-size: 25px;
+	color: white;
+}
+
+#ChooseBossBtnn {
+	horizontal-align: center;
+	margin-top: 25px;
+	width: 225px;
+	height: 45px;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #e0c59a ), to( #ae9249 ) );
+	border-radius: 10px;
+}
+
+#ChooseBossBtnn:Hover{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #e0959a ), to( #ae6249 ) );	
+}
+
+#ChooseBossBtnText {
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 30px;
+	color: white;
+}

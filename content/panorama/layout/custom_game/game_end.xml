@@ -1,0 +1,77 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/lodash.min.js" />
+		<include src="file://{resources}/scripts/custom_game/game_end.js" />
+	</scripts>
+
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="s2r://panorama/styles/graph_personalstat.vcss_c"/>
+		<include src="s2r://panorama/styles/custom_game/game_end_dota/dashboard_page_shared.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/game_end_dota/dashboard_page_post_game.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/game_end.css" />
+	</styles>
+
+	<Panel class="hud" hittest="false">
+		<Panel id="ContainerDetails" hittest="false">
+				<Panel id="ContainerCenter">
+					<Panel id="DetailsScoreboardContainer" class="DetailsPanel">
+						<Panel id="DetailsScoreboard" class="">
+							<Panel id="NormalMatchPlayers">
+								<Panel class="PlayerRowLegend StatRowHeight" id="RadiantPlayerRowLegend">
+									<Panel class="PlayerRowLegendContainer">
+										<Label class="LegendLastHits LastHitsColumn" text="#dota_page_match_details_legend_last_hits" onmouseover="UIShowTextTooltipStyled( #dota_page_match_details_legend_last_hits_tooltip, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" />
+										<Label class="LegendDeaths DeathsColumn" text="#dota_page_match_details_legend_deaths" onmouseover="UIShowTextTooltipStyled( #dota_page_match_details_legend_deaths_tooltip, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" />
+										<Panel class="NetWorthColumn LeftRightFlow"  onmouseover="UIShowTextTooltipStyled( #dota_page_match_details_legend_net_worth_tooltip, ShortTextTooltip )" onmouseout="UIHideTextTooltip()">
+											<Panel class="GoldIcon"/>
+											<Label class="LegendGold" text="#dota_page_match_details_legend_net_worth" />
+										</Panel>
+										<Label class="MMRColumn_custom" text="#MMR" onmouseover="UIShowTextTooltipStyled( #MMR_bonus, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" />
+										<Label class="MMRColumn_custom" text="#DamageTaken" onmouseover="UIShowTextTooltipStyled( #DamageTaken, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" />
+										<Label class="MMRColumn_custom" text="#DamageDeal" onmouseover="UIShowTextTooltipStyled( #DamageDeal, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" />
+										<Panel class="AttributeColumn str" onmouseover="UIShowTextTooltipStyled( #dota_str_candy, ShortTextTooltip )" onmouseout="UIHideTextTooltip()"/>
+										<Panel class="AttributeColumn agi" onmouseover="UIShowTextTooltipStyled( #dota_agi_candy, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" />
+										<Panel class="AttributeColumn int" onmouseover="UIShowTextTooltipStyled( #dota_int_candy, ShortTextTooltip )" onmouseout="UIHideTextTooltip()" />
+										<Label class="LegendItems ItemsColumn" text="#dota_page_match_details_legend_items" />
+										<Label class="LegendBackpackItems BackpackItemsColumn" text="#dota_page_match_details_legend_backpack_items" />
+									</Panel>	
+								</Panel>
+								<!-- Dynamic Loadi -->
+								<Panel class="PlayerRows" id="RadiantPlayerRows" />
+							</Panel>
+						</Panel>						
+					</Panel>
+				</Panel> 
+				<Panel id="PinnedHeroes" class="LeftRightFlow">
+					<Panel id="PinnedHeroesLeftMargin"/>
+					<Panel id="HeroIconsColumn" class="PinnedColumn TopBottomFlow">
+						<Panel class="RadiantTeamTitle TeamName StatRowHeight PinnedTeamHeader">
+						<Panel id="RadiantTeamLogoDefault" class="LobbyTeamIconDefault" />
+							<Panel class="TopBottomFlow SlidingName TeamBlock">
+								<Panel class="LeftRightFlow">
+									<Label id="RadiantTeamName"  text="{s:radiant_name}" />
+								</Panel>
+							</Panel>
+							<Panel id="RadiantWinner" class="WinnerPanel LeftRightFlow">
+								<Panel class="WinnerSides"/>
+								<Label class="WinnerTag" text="#DOTATournamentGameWinner"/>
+							</Panel>
+						</Panel>
+						<Panel id="PinnedRadiant" class="PinnedTeam TopBottomFlow" />
+					</Panel>
+					<Panel id="PinnedHeroesRightMargin"/>
+				</Panel>
+				<Button id="DisconnectButton" onactivate="DOTAHUDGameDisconnect();">
+					<Panel class="DisconnectLabel LeftRightFlow">
+						<Label text="#dota_disconnect" />
+						<Image src="s2r://panorama/images/control_icons/x_close_png.vtex" />
+					</Panel>
+				</Button>
+				<Panel id="LoadingContainer" >
+					<Panel class="LoadingSpinner" />
+					<Label text="Загрузка данных с сервера...." />
+				</Panel>
+		</Panel>
+	</Panel>
+</root>
+

@@ -1,0 +1,40 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/custom_loading_screen.css" />
+	</styles>
+
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/simple_panel_animation.js" /> 
+		<include src="file://{resources}/scripts/custom_game/game_mode.js" />
+	</scripts>
+
+	<Panel class="AddonLoadingRoot">
+		<Image id="image_bg" class="ImageBg" src="file://{images}/custom_game/loading_screen/loading_screen_bg.png" scaling="stretch-to-fit-y-preserve-aspect" />
+
+		<Panel id="CustomBg" >
+			<Panel id="game_options_container" >
+				<Panel id="GameOptionsPanel">
+					<Label id="game_options_game_mode_title" text="#imba_gamemode_name_all_pick" />
+
+					<Button id="ConfirmOptionsBtn1" onactivate="SetGameOptions();" onmouseover="UIShowTextTooltip( imba_gamemode_settings_lock_options_tooltip )" onmouseout="UIHideTextTooltip()">
+						<Label id="ConfirmOptionsBtnLabel" text="#imba_gamemode_settings_lock_options" />
+					</Button>					
+
+					<Button id="ConfirmOptionsBtn" onactivate="SetGameOptions1();" onmouseover="UIShowTextTooltip( imba_gamemode_settings_lock_options_tooltip1 )" onmouseout="UIHideTextTooltip()">
+						<Label id="ConfirmOptionsBtnLabel" text="#imba_gamemode_settings_lock_options1" />
+					</Button>
+
+					<Button id="ConfirmOptionsBtn2" onactivate="SetGameOptions2();" onmouseover="UIShowTextTooltip( imba_gamemode_settings_lock_options_tooltip2 )" onmouseout="UIHideTextTooltip()">
+						<Label id="ConfirmOptionsBtnLabel" text="#imba_gamemode_settings_lock_options2" />
+					</Button>
+
+					<Button id="ConfirmOptionsBtn3" onactivate="SetGameOptions3();" onmouseover="UIShowTextTooltip( imba_gamemode_settings_lock_options_tooltip3 )" onmouseout="UIHideTextTooltip()">
+						<Label id="ConfirmOptionsBtnLabel" text="#imba_gamemode_settings_lock_options3" />
+					</Button>
+					 
+				</Panel>
+			</Panel>
+		</Panel>
+
+	</Panel>
+</root>

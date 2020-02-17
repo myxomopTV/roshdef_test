@@ -1,0 +1,296 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"projectilehan",
+				"OnProjectileHitHandle"
+			],
+			[
+				"CreateTrackingp",
+				"CreateTrackingProjectile"
+			],
+			[
+				"cursor",
+				"GetCursorTarget"
+			],
+			[
+				"particleent",
+				"SetParticleControlEnt"
+			],
+			[
+				"particleen",
+				"SetParticleControlEnt"
+			],
+			[
+				"setpa",
+				"SetParticleControl"
+			],
+			[
+				"manager_par",
+				"CScriptParticleManager_CreateParticle"
+			],
+			[
+				"flag_none",
+				"DOTA_UNIT_TARGET_FLAG_NONE"
+			],
+			[
+				"GetSpe",
+				"GetSpecialValueFor"
+			],
+			[
+				"for",
+				"fori\tfor i,v in ipairs()"
+			],
+			[
+				"findu",
+				"FindUnitsInRadius"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "require('libraries')\nrequire('Spawn')\nrequire('libraries/buildinghelper')\n\nrequire('donate')\nrequire('barebones')\nrequire('abilities/basic')\n--require(\"statcollection/init\")\n\nfunction Precache( context )\n\t-- NOTE: IT IS RECOMMENDED TO USE A MINIMAL AMOUNT OF LUA PRECACHING, AND A MAXIMAL AMOUNT OF DATADRIVEN PRECACHING.\n\t-- Precaching guide: https://moddota.com/forums/discussion/119/precache-fixing-and-avoiding-issues\n\n\t--[[\n\tThis function is used to precache resources/units/items/abilities that will be needed\n\tfor sure in your game and that cannot or should not be precached asynchronously or \n\tafter the game loads.\n\n\tSee GameMode:PostLoadPrecache() in barebones.lua for more information\n\t]]\n\n\tprint(\"[BAREBONES] Performing pre-load precache\")\n\n\t-- Particles can be precached individually or by folder\n\t-- It it likely that precaching a single particle system will precache all of its children, but this may not be guaranteed\n\tPrecacheResource(\"soundfile\", \"soundevents/game_sounds_custom.vsndevts\", context )\n\tPrecacheResource(\"soundfile\", \"soundevents/imba_item_soundevents.vsndevts\", context )\n\tPrecacheResource(\"soundfile\", \"soundevents/game_sounds_winter_2018.vsndevts\", context )\n\tPrecacheResource(\"soundfile\", \"soundevents/game_sounds_dungeon_enemies.vsndevts\", context )\n\n\t-- Radiant Hulk (Behemoth)\n\tPrecacheResource(\"particle\", \"particles/creeps/lane_creeps/creep_radiant_hulk_ambient.vpcf\", context)\n\tPrecacheResource(\"particle\", \"particles/creeps/lane_creeps/creep_radiant_hulk_ambient_energy.vpcf\", context)\n\tPrecacheResource(\"particle\", \"particles/creeps/lane_creeps/creep_radiant_hulk_ambient_flakes.vpcf\", context)\n\tPrecacheResource(\"particle\", \"particles/creeps/lane_creeps/creep_radiant_hulk_swipe.vpcf\", context)\n\tPrecacheResource(\"particle\", \"particles/creeps/lane_creeps/creep_radiant_hulk_swipe_glow.vpcf\", context)\n\tPrecacheResource(\"particle\", \"particles/creeps/lane_creeps/creep_radiant_hulk_swipe_left.vpcf\", context)\n\tPrecacheResource(\"particle\", \"particles/creeps/lane_creeps/creep_radiant_hulk_swipe_right.vpcf\", context)    \n\n\t-- Dire Hulk (Behemoth)\n\tPrecacpheResource(\"particle\", \"particles/creeps/lane_creeps/creep_dire_hulk_ambient_core.vpcf\", context)\n\tPrecacheResource(\"particle\", \"particles/creeps/lane_creeps/creep_dire_hulk_flames.vpcf\", context)\n\tPrecacheResource(\"particle\", \"particles/creeps/lane_creeps/creep_dire_hulk_rays.vpcf\", context)\n\tPrecacheResource(\"particle\", \"particles/creeps/lane_creeps/creep_dire_hulk_swipe.vpcf\", context)\n\tPrecacheResource(\"particle\", \"particles/creeps/lane_creeps/creep_dire_hulk_swipe_glow.vpcf\", context)\n\tPrecacheResource(\"particle\", \"particles/creeps/lane_creeps/creep_dire_hulk_swipe_left.vpcf\", context)\n\tPrecacheResource(\"particle\", \"particles/creeps/lane_creeps/creep_dire_hulk_swipe_right.vpcf\", context)    \n\tPrecacheResource(\"particle\", \"particles/rainbow.vpcf\", context)    \n\tPrecacheResource(\"particle\", \"particles/econ/events/ti7/ti7_hero_effect.vpcf\", context)    \n\tPrecacheResource(\"particle\", \"particles/dire_fx/bad_ancient_ambient.vpcf\", context)    \n\tPrecacheResource(\"particle\", \"particles/econ/courier/courier_trail_winter_2012/courier_trail_winter_2012_snow.vpcf\", context)    \n\n\tPrecacheResource(\"particle_folder\", \"particles/units/heroes/heroes_underlord/\", context)\n\tPrecacheResource(\"particle_folder\", \"particles/status_fx/\", context)\n\tPrecacheResource(\"particle_folder\", \"particles/item\", context)\n\tPrecacheResource(\"particle_folder\", \"particles/items_fx\", context)\n\tPrecacheResource(\"particle_folder\", \"particles/items2_fx\", context)\n\tPrecacheResource(\"particle_folder\", \"particles/items3_fx\", context)\n\tPrecacheResource(\"particle_folder\", \"particles/units/heroes/hero_chaos_knight\", context)\n\tPrecacheResource(\"particle_folder\", \"particles/units/heroes/hero_abyssal_underlord\", context)\n\tPrecacheResource(\"particle_folder\", \"particles/units/heroes/hero_faceless_void\", context)\n\tPrecacheResource(\"particle_folder\", \"particles/units/heroes/hero_phoenix\", context)\n\tPrecacheResource(\"particle_folder\", \"particles/units/heroes/hero_phantom_assassin\", context)\n\tPrecacheResource(\"particle_folder\", \"particles/units/heroes/hero_alchemist\", context)\n\tPrecacheResource(\"particle_folder\", \"particles/units/heroes/hero_gyrocopter\", context)\n\tPrecacheResource(\"particle_folder\", \"particles/units/heroes/hero_zuus\", context)\n\n\tPrecacheUnitByNameSync(\"npc_dota_dire1\", context)\n\t-- Models can also be precached by folder or individually\n\t-- PrecacheModel should generally used over PrecacheResource for individual models\n\tPrecacheResource(\"model_folder\", \"particles/heroes/antimage\", context)\n\tPrecacheUnitByNameSync(\"example_unit_1\", context)\n\n\t-- Sounds can precached here like anything else\n\n\tPrecacheUnitByNameSync(\"npc_dota_dire1\", context)\n\tPrecacheUnitByNameSync(\"npc_dota_dire2\", context)\n\tPrecacheUnitByNameSync(\"npc_dota_dire3\", context)\n\tPrecacheUnitByNameSync(\"npc_dota_dire4\", context)\n\tPrecacheUnitByNameSync(\"npc_dota_dire5\", context)\n\tPrecacheUnitByNameSync(\"npc_dota_direr1\", context)\n\tPrecacheUnitByNameSync(\"npc_dota_direr2\", context)\n\tPrecacheUnitByNameSync(\"npc_dota_direr3\", context)\n\tPrecacheUnitByNameSync(\"npc_dota_direr4\", context)\n\tPrecacheUnitByNameSync(\"npc_dota_dguard1\", context)\n\tPrecacheUnitByNameSync(\"npc_dota_dguard2\", context)\n\tPrecacheUnitByNameSync(\"npc_dota_nguard1\", context)\n\tPrecacheUnitByNameSync(\"npc_dota_nguard2\", context)\n\tPrecacheUnitByNameSync(\"npc_dota_hero_meepo\", context)\n\n --   PrecacheItemByNameSync( \"item_tombstone\", context )\n \n --   PrecacheResource( \"model\", \"models/gameplay/attrib_tome_int.vmdl\", context  )\n\t\n--    PrecacheResource( \"particle\", \"particles/test_particle/dungeon_generic_blast_ovr_pre.vpcf\", context  )\n \n--    PrecacheResource( \"particle_folder\", \"particles/units/heroes/hero_winter_wyvern\", context )\n\tPrecacheResource( \"particle_folder\", \"particles/units/heroes/hero_pudge\", context )\n\tPrecacheResource( \"particle_folder\", \"particles/units/heroes/hero_sven\", context )\n --Sounds\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_shadow_demon.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_skywrath_mage.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_skywrath_mage.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_dark_willow.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_dark_willow.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_terrorblade.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_lich.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_lich.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_nevermore.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_undying.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_undying.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_necrolyte.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_necrolyte.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_ogre_magi.vsndevts\", context )\n    PrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_ancient_apparition.vsndevts\", context )\n    PrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_skeleton_king.vsndevts\", context )\n    PrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_skeleton_king.vsndevts\", context )\n    PrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_announcer_dlc_glados.vsndevts\", context )\n    PrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_announcer_dlc_gaben_killing_spree.vsndevts\", context )\n \n \tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_spectre.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_spectre.vsndevts\", context )\n \tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_obsidian_destroyer.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_outworld_destroyer.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_enigma.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_warlock_golem.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_dazzle.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_broodmother.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_broodmother.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_sven.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_sven.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_earthshaker.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_warlock.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_spectre.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_treant.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_treant.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_slark.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_slardar.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_naga_siren.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_viper.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_furion.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_pudge.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_abyssal_underlord.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_medusa.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_dragon_knight.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_shredder.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_shredder.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_bloodseeker.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_bloodseeker.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_omniknight.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_omniknight.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_roshan_frostivus.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_lich.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_tiny.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts\", context )\n    PrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_razor.vsndevts\", context )\n    PrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_tidehunter.vsndevts\", context )\n    PrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_skeletonking.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_nevermore.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_stormspirit.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_chaos_knight.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_rattletrap.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_gyrocopter.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_gyrocopter.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_rattletrap.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_alchemist.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_alchemist.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_sniper.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_phantom_assassin.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_phantom_assassin.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_drowranger.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_drowranger.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_phoenix.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_phoenix.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_faceless_void.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_faceless_void.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_arc_warden.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_arc_warden.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/game_sounds_heroes/game_sounds_puck.vsndevts\", context )\n\tPrecacheResource( \"soundfile\", \"soundevents/voscripts/game_sounds_vo_puck.vsndevts\", context )\n\nend\n-- Create the game mode when we activate\nfunction Activate()\n\tGameRules.GameMode = GameMode()\n\tGameRules.GameMode:InitGameMode()\n\tGameRules.GameMode:AnitGameMode()\n\tSpawn:InitGameMode()\n\n\tConvars:SetBool(\"sv_cheats\", true)\nend\n\nfunction GameMode:AnitGameMode()\n\tGameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_GOODGUYS, 5 )\n    GameRules:SetCustomGameTeamMaxPlayers( DOTA_TEAM_BADGUYS, 0 )\n\t\n\tGameRules:GetGameModeEntity():SetMaximumAttackSpeed( 2400 ) \n\tGameRules:GetGameModeEntity():SetMinimumAttackSpeed( 50 )\n\tGameRules:GetGameModeEntity():SetCustomBuybackCostEnabled( true ) \n--\tGameRules:GetGameModeEntity():SetCustomBuybackCooldownEnabled( true )\n\tGameRules:GetGameModeEntity():SetBuybackEnabled( true )\n\tPlayerResource:SetCustomBuybackCost(0,1000)\n--[[\t\n\tlocal GM = GameRules:GetGameModeEntity()\n\tGM:SetCustomGameForceHero(\"npc_dota_hero_puck\")\n\tGameRules:SetHeroSelectionTime(0)\n\tGameRules:SetStrategyTime(0)\n\tGameRules:SetShowcaseTime(0)\n\tGameRules:SetCustomGameSetupAutoLaunchDelay(0)\n]]\n\tfor i=0,4 do\n\t\t\n--\t\t\tPlayerResource:SetCustomBuybackCooldown(i, 60)\t\t\n\t\t\tPlayerResource:SetCustomBuybackCost(i, 0)\n\tend\nend",
+			"file": "vscripts/addon_game_mode.lua",
+			"file_size": 18673,
+			"file_write_time": 132222956072793033,
+			"settings":
+			{
+				"buffer_size": 16160,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pro",
+				"Project: Close"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 220.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts"
+	],
+	"file_history":
+	[
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_lone_druid/savage_roar.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_phoenix/npc_abilities_custom.txt",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_spartacus/item_icefrog.txt",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/abilities/basic.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_spectre/soul_eater.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/items/item_dust_of_appearance.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/chicken_pig/scripts/vscripts/ai/ai_premiumpet.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/chicken_pig/scripts/vscripts/modifiers/modifier_golden_pet.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_mark/good_discount.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_mark/strength.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_lone_druid/spirit_link.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/roshan_def/scripts/vscripts/heroes/hero_tiny/tiny_grow_custom.lua",
+		"/D/games/steam/steamapps/common/dota 2 beta/game/dota_addons/chicken_pig/scripts/vscripts/modifiers.lua"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"PrecacheResource"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "vscripts/addon_game_mode.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16160,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5840,
+								5840
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2002.4,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "scripts.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"txt",
+				"heroes\\hero_phoenix\\npc_abilities_custom.txt"
+			],
+			[
+				"basic",
+				"abilities\\basic.lua"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 258.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

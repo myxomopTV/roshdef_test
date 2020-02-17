@@ -1,0 +1,8 @@
+roshdef_event
+{
+	material materials/overviews/roshdef_standart.vmat
+	pos_x -10200
+	pos_y 10193
+	scale 19.902
+}
+

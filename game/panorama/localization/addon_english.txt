@@ -1,0 +1,41 @@
+"addon"
+{
+		"addon_game_name"							"ROSHAN DEFENSE"
+		"DOTA_GameMode_15"	                        "ROSHAN DEFENSE"
+		"game_mode_15"				                "ROSHAN DEFENSE"
+		"DOTA_GoodGuys"                             "ROSHAN TEAM"
+
+		"imba_gamemode_name_all_pick"                                                       "Chose Difficult"
+
+		"imba_gamemode_settings_lock_options"                                               "Herald"
+		"imba_gamemode_settings_lock_options1"                                               "Legend"
+		"imba_gamemode_settings_lock_options2"                                               "Divine"
+		"imba_gamemode_settings_lock_options3"                                               "Immortal"
+
+		"imba_gamemode_settings_lock_options_tooltip"                                       "Enemies not have bonus. Alliance forpost dont attacks ."
+		"imba_gamemode_settings_lock_options_tooltip1"                                       "Enemies have bonus (health, attack, armor) +50%. Alliance forpost attacks ."
+		"imba_gamemode_settings_lock_options_tooltip2"                                       "Enemies have bonus (health, attack, armor) +100%. Alliance forpost attacks ."
+		"imba_gamemode_settings_lock_options_tooltip3"                                       "Enemies have bonus (health, attack, armor) +200%. Alliance forpost attacks ."
+
+		"GLOBAL_RANKING"                                               	"Player ranking"
+		"current_season"                                               	"Current season"
+		"all_time"                                               	"Endless season"
+		"top_10"                                               		"TOP10 Players"
+		"my_position"                                               	"My position"
+		"leaderboards_speedrun"                                         "Speedrun ranking"
+		"only_solo_mode"                                               	"Only for SOLO players"
+		"standart_map"                                               	"Standart"
+		"turbo_map"                                               	"Turbo"
+		"game_time"                                               	"Duration"
+		"rank"                                               		"Rank"
+		"player"                                               		"Player"
+		"GLOBAL_RANKING_SPEEDRUN"                                   "Solo speedrun ranking"
+		
+		"roshdef_game_info_text1"					"<span class='gold'>Protect Roshan!</span>"
+		"roshdef_game_info_text2"					"<span class='gold'>Farm and became more powerful!</span><br>Neutral units respawn 60(30) seconds.<br>Neutral bosses respawn 300(150) seconds."
+		"roshdef_game_info_text3"					"Killing a neutral boss will free  <br><span class='gold'>children of fraction</span>, who will go to war on the line!"
+		"roshdef_game_info_text4"					"Every 10 <span class='gold'>*</span> minutes, the boss comes out cooperate all together to fight back the boss!<br><span class='gold'>* 5 for turbomode</span>"
+		"roshdef_game_info_text5"					"In place of some neutral bosses, a stronger boss will respawn.<br>Lvl3 boss drops <span class='gold'>unique relic</span> !"
+		"roshdef_game_info_text6"					"Having destroyed the first base of darkness, the final boss is generated with  <br><span class='gold'>additional features of the game</span> !"
+
+}

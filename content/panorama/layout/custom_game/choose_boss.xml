@@ -1,0 +1,44 @@
+<root>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/choose_boss.js" />
+	</scripts>
+
+	<styles>
+		<include src="file://{resources}/styles/custom_game/choose_boss.css" />
+	</styles>
+
+	
+	<Panel class="Hud" hittest="false">
+		<Button id="ChooseBossButton" onactivate="ChooseBossButton()">
+			<Label id="ChooseBossButtonText" text="#choose_boss_button_text" />
+		</Button>
+		<Panel id="ChooseBossContainer">
+			<Panel id="ChooseBossPanel">
+				<Button class="BossButton" onactivate='BossButtonPressed( "necro" );'>
+					<DOTAHeroImage heroname="necrolyte" />
+				</Button>
+				<Button class="BossButton" onactivate='BossButtonPressed( "lich" );'>
+					<DOTAHeroImage heroname="lich" />
+				</Button>
+				<Button class="BossButton" onactivate='BossButtonPressed( "demon" );'>
+					<DOTAHeroImage heroname="terrorblade" />
+				</Button>
+				<Button class="BossButton" onactivate='BossButtonPressed( "zombie" );'>
+					<DOTAHeroImage heroname="undying" />
+				</Button>
+				<Button class="BossButton" onactivate='BossButtonPressed( "chaos" );'>
+					<DOTAHeroImage heroname="nevermore" />
+				</Button>
+			</Panel>
+			<Panel id="BossInfo">
+				<Label id="BossName" text="" />
+				<Label id="Osobenosti" html="true" text="#choose_boss_osobenosti"/>
+				<Panel id="border" />
+				<Label id="BossDescription" html="true"  text="" />
+				<Button id="ChooseBossBtnn" onactivate="ChooseBoss();">
+					<Label id="ChooseBossBtnText" html="true" text="#choose_boss_button_select_text" />
+				</Button>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

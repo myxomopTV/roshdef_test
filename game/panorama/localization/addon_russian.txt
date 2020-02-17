@@ -1,0 +1,44 @@
+"addon"
+{
+		"addon_game_name"							"ROSHAN DEFENSE"
+		"DOTA_GameMode_15"	                        "ROSHAN DEFENSE"
+		"game_mode_15"				                "ROSHAN DEFENSE"
+		"DOTA_GoodGuys"                             "ROSHAN TEAM"
+
+		"imba_gamemode_name_all_pick"                                                       "Выберите сложность"
+
+		"imba_gamemode_settings_lock_options"                                               "Новичок"
+		"imba_gamemode_settings_lock_options1"                                              "Бывалый"
+		"imba_gamemode_settings_lock_options2"                                              "Ветеран"
+		"imba_gamemode_settings_lock_options3"                                              "Титан"
+
+		"imba_gamemode_settings_lock_options_tooltip"                                       "Враги не имеют бонусов. Альянс не атакует."
+		"imba_gamemode_settings_lock_options_tooltip1"                                      "Все враги получают бонус 50%(здоровье,атака,защита). Альянс атакует."
+		"imba_gamemode_settings_lock_options_tooltip2"                                      "Все враги получают бонус 100%(здоровье,атака,защита). Альянс атакует."
+		"imba_gamemode_settings_lock_options_tooltip3"                                      "Все враги получают бонус 200%(здоровье,атака,защита). Альянс атакует."
+
+		"GLOBAL_RANKING"                                               	"Рейтинг игроков"
+		"current_season"                                               	"Текущий сезон"
+		"all_time"                                               	"За всё время"
+		"top_10"                                               		"ТОП10 ИГРОКОВ"
+		"my_position"                                               	"Моя позиция"
+		"leaderboards"                                         "Рейтинг игроков"
+		"leaderboards_speedrun"                                         "Рейтинг спидранеров"
+		"only_solo_mode"                                               	"Только для СОЛО игроков"
+		"standart_map"                                               	"Стандарт"
+		"turbo_map"                                               	"Турбо"
+		"game_time"                                               	"Длительность"
+		"rank"                                               		"Ранк"
+		"player"                                               		"Игрок"
+		"GLOBAL_RANKING_SPEEDRUN"                                   "Рейтинг соло спидранеров"
+		"sss"                                               	""
+
+		"roshdef_game_info_text1"					"<span class='gold'>Защищайте Рошана !</span>"
+		"roshdef_game_info_text2"					"<span class='gold'>Фармите и набирайте силу!</span><br>Восстановление юнитов 60(30)<br>Восстановление боссов 300(150)"
+		"roshdef_game_info_text3"					"Убив нейтрального босса вы освободите <span class='gold'>зверей фракции</span>, которые присоединятся к армии Рошана. Также они могут быть приручены героями своей расы."
+		"roshdef_game_info_text4"					"Каждые 10<span class='gold'>*</span> минут выходит босс кооперируйтесь вместе, чтобы дать отпор боссу!<br><span class='gold'>* 5 для турбомода</span>"
+		"roshdef_game_info_text5"					"На месте некоторых нейтральных боссов респаунится более сильный босс . <br>С босса 3-го уровня упадет уникальная <span class='gold'>реликвия</span> !"
+		"roshdef_game_info_text6"					"Уничтожив первую базу тьмы , генерируется финальный босс с дополнительными <br><span class='gold'>особенностями игры</span> !"
+		
+}
+//<span class='midas_throne'>Midas Throne</span>

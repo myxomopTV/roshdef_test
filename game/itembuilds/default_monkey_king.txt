@@ -1,0 +1,71 @@
+"itembuilds/test_life_stealer.txt"
+{
+	"author"		"Valve"
+	"hero"			"npc_dota_hero_monkey_king"
+	"Title"			"Recommended items for monkey king"
+	
+	"Items"
+	{		
+		"#DOTA_Item_Build_Starting_Items"
+		{
+            "item"      "item_ancient_tango_datadriven_1"
+            "item"      "item_clarity"
+ 
+            "item"      "item_boots"
+            "item"      "item_shield"
+            "item"      "item_mail"
+  		}
+		
+		"#DOTA_Item_Build_Early_Game"
+		{	
+            "item"      "item_power_treads"
+            "item"      "item_satanic"
+            "item"      "item_mask_of_madness"
+            "item"      "item_simple_armlet"
+            "item"      "item_quelling_blade_1_datadriven"
+            "item"      "item_desolator"
+		}
+		
+		"#DOTA_Item_Build_Mid_Items"			
+		{
+            "item"      "item_imba_power_treads_2"
+
+            "item"      "item_imba_mjollnir_2"
+ 
+            "item"      "item_mega_bfury_datadriven"
+            "item"      "item_satanic_3"
+            "item"      "item_mask_of_madness_3"
+            "item"      "item_imba_desolator_2"
+ 
+            "item"      "item_imba_starfury"
+            "item"      "item_imba_butterfly"
+      		
+		}
+		
+		"#DOTA_Item_Build_Late_Items"			
+		{
+            "item"      "item_ultra_boots"
+            "item"      "item_imba_heart"
+            "item"      "item_imba_greater_crit"
+
+			"item"		"item_fire_rapier"
+			"item"		"item_ice_rapier"
+			"item"		"item_wind_rapier"
+			"item"		"item_earth_rapier"
+
+			"item"		"item_cursed_rapier"
+				
+		}
+
+		"#DOTA_Item_Build_Luxury"
+		{
+			"item"		"item_tome_of_knowledge"
+			"item"		"item_imba_moon_shard"	
+			"item"		"item_bonus_strength10"
+			"item"		"item_bonus_agility10"
+			"item"		"item_bonus_intelligence10"
+			"item"		"item_bonus_stats10"
+		}
+	
+	}
+}

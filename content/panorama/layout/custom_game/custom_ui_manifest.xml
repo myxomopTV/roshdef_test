@@ -1,0 +1,20 @@
+<root>
+	<script>
+//		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_BAR_RADIANT_TEAM, false );
+		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_BAR_DIRE_TEAM, false );
+		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_ENDGAME, false );
+	</script>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/lodash.min.js" />
+	</scripts>
+	<Panel>
+		<Image id="image_bg" class="ImageBg" src="file://{images}/request/leaderboards.png" />
+		<CustomUIElement type="Hud" 		layoutfile="file://{resources}/layout/custom_game/my_hud.xml" />
+		<CustomUIElement type="GameInfo" 	layoutfile="file://{resources}/layout/custom_game/game_info.xml" />
+		<CustomUIElement type="Hud" 		layoutfile="file://{resources}/layout/custom_game/choose_boss.xml" />
+		<CustomUIElement type="EndScreen" 		layoutfile="file://{resources}/layout/custom_game/game_end.xml" />
+		<CustomUIElement type="Hud" 		layoutfile="file://{resources}/layout/custom_game/barebones_notifications.xml" />
+		<CustomUIElement type="Hud"  		layoutfile="file://{resources}/layout/custom_game/building_helper.xml" />
+		<CustomUIElement type="Hud"  		layoutfile="file://{resources}/layout/custom_game/selection.xml" />
+	</Panel>
+</root>

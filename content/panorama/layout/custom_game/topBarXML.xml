@@ -1,0 +1,19 @@
+<root>
+
+  <styles>
+    <include src="file://{resources}/styles/custom_game/donate.css" />
+  </styles>
+  <Panel class="__Root" >
+    <Panel id="BossTimerContainer" >
+      <Panel class="TeamBackground">
+          <Panel class="TopBarBackground"/>
+      </Panel>
+      <Panel id="ContentBossTimer" >
+        <Image id="ImgRoshan" src="file://{resources}/images/custom_game/donate/roshan.png" />
+        <Label id="TimerLabel" text="00:00" />
+        <Image id="Difficult_img" /> 
+        <Label id="Difficult" text="imba_gamemode_settings_lock_options" /> 
+      </Panel>
+    </Panel>
+  </Panel>
+</root>

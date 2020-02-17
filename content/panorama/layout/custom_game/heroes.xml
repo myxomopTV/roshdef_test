@@ -1,0 +1,37 @@
+<root>
+ 	 <Panel class="AddonLoadingRoot">
+      		<Image id="gamemode" class="SeqImg" src="file://{images}/custom_game/heroes/omniknight.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/custom_game/heroes/treant.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/custom_game/heroes/life_stealer.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/custom_game/heroes/puck.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/custom_game/heroes/pudge.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/custom_game/heroes/obsidian_destroyer.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/custom_game/heroes/abyssal_underlord.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/custom_game/heroes/crystal_maiden.png" />
+
+      		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_omniknight.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_treant.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_life_stealer.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_puck.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_pudge.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_obsidian_destroyer.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_abyssal_underlord.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_crystal_maiden.png" />
+
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_omniknight.png" />
+      		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_life_stealer.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_puck.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_abyssal_underlord.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_crystal_maiden.png" />
+
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/donate/patreon.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/donate/qiwi.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/donate/donationalerts.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/donate/toggle_button.png" />
+ 
+			<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_omniknight.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_treant.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_life_stealer.png" />
+     		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_puck.png" />
+	 </Panel>
+</root>

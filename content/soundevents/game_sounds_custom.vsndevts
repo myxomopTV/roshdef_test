@@ -1,0 +1,2686 @@
+"roshan_def.reincarnate"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/stingers/wk_holdout_reincarnate.vsnd"
+                                                }
+                                        }
+                                        "volume_min"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "volume_max"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "pitch_min"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "pitch_max"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+"roshan_def.01"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_2d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/stingers/01.vsnd"
+                                                }
+                                        }
+                                        "volume_min"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "volume_max"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "pitch_min"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "pitch_max"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+"roshan_def.02"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_2d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/stingers/02.vsnd"
+                                                }
+                                        }
+                                        "volume_min"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "volume_max"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "pitch_min"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "pitch_max"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+"roshan_def.03"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_2d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/stingers/03.vsnd"
+                                                }
+                                        }
+                                        "volume_min"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "volume_max"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "pitch_min"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "pitch_max"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+"roshan_def.04"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_2d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/stingers/04.vsnd"
+                                                }
+                                        }
+                                        "volume_min"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "volume_max"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "pitch_min"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "pitch_max"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+"roshan_def.05"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_2d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/stingers/05.vsnd"
+                                                }
+                                        }
+                                        "volume_min"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "volume_max"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "pitch_min"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "pitch_max"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+"roshan_def.lose"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_2d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/stingers/lose.vsnd"
+                                                }
+                                        }
+                                        "volume_min"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "volume_max"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "pitch_min"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "pitch_max"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+"roshan_def.win"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_2d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/stingers/win.vsnd"
+                                                }
+                                        }
+                                        "volume_min"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "volume_max"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "pitch_min"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "pitch_max"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+"roshan_def.boss"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_2d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/stingers/boss.vsnd"
+                                                }
+                                        }
+ 										"volume"			{   "value"     "0.400000"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+} 
+"roshan_def.portal2"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/portal2.vsnd"
+                                                }
+                                        }
+                                        "volume_min"
+                                        {
+                                                "value"         "4.400000"
+                                        }
+                                        "volume_max"
+                                        {
+                                                "value"         "4.400000"
+                                        }
+                                        "pitch_min"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "pitch_max"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+"roshan_def.jojo"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_2d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/jojo.vsnd"
+                                                }
+                                        }
+                                        "volume_min"
+                                        {
+                                                "value"         "4.400000"
+                                        }
+                                        "volume_max"
+                                        {
+                                                "value"         "4.400000"
+                                        }
+                                        "pitch_min"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "pitch_max"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+"roshan_def.wd_dance"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/witch_doctor/feel_it_in_your_bones.vsnd"
+                                                }
+                                        }
+										"volume_min" 		{	"value"         "1.2500000" }
+										"volume_max"		{	"value"         "1.2500000" }
+										"pitch"       		{  	"value"   	"1.000000" }
+										"soundlevel"		{	"value"		"72.000000" }
+										"distance_max"		{	"value"		"600.000000" }
+
+
+                                }
+                        }
+                }
+        }
+}
+"narod_pognali"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/narod_pognali.vsnd"
+                                                }
+                                        }
+                                        "volume_min"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "volume_max"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "pitch_min"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "pitch_max"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+"padal_sneg"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/music/padal_sneg.vsnd"
+						}
+					}
+					"volume"			{   "value"     "1.4500000"  }
+					"pitch"       		{  	"value"   	"1.000000" }
+					"soundlevel"		{	"value"		"72.000000" }
+
+				}
+			}
+		}
+	}
+}
+"kira_theme"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/kiratheme.vsnd"
+                                                }
+                                        }
+                                        "volume_min"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "volume_max"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "pitch_min"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "pitch_max"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"notification"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/drop_box.vsnd"
+                                                }
+                                        }
+                                        "volume_min"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "volume_max"
+                                        {
+                                                "value"         "1.400000"
+                                        }
+                                        "pitch_min"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "pitch_max"
+                                        {
+                                                "value"         "1.000000"
+                                        }
+                                        "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+
+"sans_theme"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "value0"                "sounds/music/Undertale_Megalovania.vsnd"
+                                                }
+                                        }
+										"volume"			{   "value"     "1.000000"  }
+//										"soundlevel"		{   "value"     "100"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+"sans_speak"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"                "sounds/music/sans_voice.vsnd"
+						}
+					}
+					"volume"			{   "value"     "15.500000"  }
+					"pitch"       		{  	"value"   	"1.000000" }
+					"chan_type"
+					{
+						"value"         "0"
+					}
+					"memory_type"
+					{
+						"value"         "0"
+					}
+				}
+			}
+		}
+        }
+}
+
+
+
+"terrorblade_spawn"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+		"vsnd_files"
+		{
+				"value"
+				{
+						"value0"                "sounds/music/War3_illidan.vsnd"
+				}
+		}
+										"volume"			{   "value"     "2.500000"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"tanos_balans"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+		"vsnd_files"
+		{
+				"value"
+				{
+						"value0"                "sounds/music/tanos_balans.vsnd"
+				}
+		}
+										"volume"			{   "value"     "2.500000"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"tanos_death"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+		"vsnd_files"
+		{
+				"value"
+				{
+						"value0"                "sounds/music/tanos_death.vsnd"
+				}
+		}
+										"volume"			{   "value"     "5.500000"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"Sandopolis"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+		"vsnd_files"
+		{
+				"value"
+				{
+						"value0"                "sounds/music/Sandopolis.vsnd"
+				}
+		}
+										"volume"			{   "value"     "1.500000"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+
+"SatanBal"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+		"vsnd_files"
+		{
+				"value"
+				{
+						"value0"                "sounds/music/SatanBal.vsnd"
+				}
+		}
+										"volume"			{   "value"     "1.500000"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+
+"LakadMatatag"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+		"vsnd_files"
+		{
+				"value"
+				{
+						"value0"                "sounds/music/LakadMatatag.vsnd"
+				}
+		}
+										"volume"			{   "value"     "1.7500000"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+
+"ChickenRush"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+									"vsnd_files"
+									{
+											"value"
+											{
+													"value0"                "sounds/music/chicken_rush.vsnd"
+											}
+									}
+									"volume_min" 		{	"value"         "1.7500000" }
+									"volume_max"		{	"value"         "1.7500000" }
+									"pitch"       		{  	"value"   	"1.000000" }
+									"soundlevel"		{	"value"		"72.000000" }
+									"distance_max"		{	"value"		"600.000000" }
+
+                                }
+                        }
+                }
+        }
+}
+
+"ChickenTaunt"
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "src1_3d"
+                                "operator_variables"
+                                {
+										"vsnd_files"
+										{
+												"value"
+												{
+														"value0"                "sounds/weapons/hero/skywrath/taunt_chicken.vsnd"
+												}
+										}
+										"volume"			{   "value"     "1.500000"  }
+										"pitch"       		{  	"value"   	"1.000000" }
+                                       "chan_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                        "memory_type"
+                                        {
+                                                "value"         "0"
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+"this_is_sparta" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/heroes/mars/this_is_sparta.vsnd"
+						}
+					}
+					"volume"			{   "value"     "7.500000"  }
+					"pitch"       		{  	"value"   	"1.000000" }
+					"soundlevel"		{	"value"		"72.000000" }
+					"distance_max"		{	"value"		"1000.000000" }
+
+				}
+			}
+		}
+	}
+}
+
+"hello_there" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/heroes/mars/hello_there.vsnd"
+						}
+					}
+					"volume"			{   "value"     "3.500000"  }
+					"pitch"       		{  	"value"   	"1.000000" }
+					"soundlevel"		{	"value"		"72.000000" }
+					"distance_max"		{	"value"		"1000.000000" }
+
+
+				}
+			}
+		}
+	}
+}
+
+"gachi_cry" 
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "dota_src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "sound1"         "sounds/music/gachi/cry_1.vsnd"
+                                                        "sound2"         "sounds/music/gachi/cry_2.vsnd"
+                                                        "sound3"         "sounds/music/gachi/cry_3.vsnd"
+                                                        "sound4"         "sounds/music/gachi/cry_4.vsnd"
+                                                        "sound5"         "sounds/music/gachi/cry_5.vsnd"
+                                                }
+                                        }
+                                        "volume"                        {   "value"     "7.500000"  }
+                                        "pitch"                 {       "value"         "1.100000" }
+                                        "soundlevel"            {       "value"         "72.000000" }
+                                        "distance_max"          {       "value"         "1000.000000" }
+
+
+                                }
+                        }
+                }
+        }
+}
+
+"gachi_wellcry" 
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "dota_src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "sound1"         "sounds/music/gachi/wellcry_1.vsnd"
+                                                        "sound2"         "sounds/music/gachi/wellcry_2.vsnd"
+                                                        "sound3"         "sounds/music/gachi/wellcry_3.vsnd"
+                                                }
+                                        }
+                                        "volume"                        {   "value"     "9.500000"  }
+                                        "pitch"                 {       "value"         "1.100000" }
+                                        "soundlevel"            {       "value"         "72.000000" }
+                                        "distance_max"          {       "value"         "1000.000000" }
+
+
+                                }
+                        }
+                }
+        }
+}
+
+"gachi_fisting_300" 
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "dota_src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "sound1"         "sounds/music/gachi/fisting_300.vsnd"
+                                                }
+                                        }
+                                        "volume"                        {   "value"     "8.500000"  }
+                                        "pitch"                 {       "value"         "1.000000" }
+                                        "soundlevel"            {       "value"         "72.000000" }
+                                        "distance_max"          {       "value"         "1000.000000" }
+
+
+                                }
+                        }
+                }
+        }
+}
+
+"gachi_slaves_get" 
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "dota_src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "sound1"         "sounds/music/gachi/slaves_get.vsnd"
+                                                }
+                                        }
+                                        "volume"                        {   "value"     "8.500000"  }
+                                        "pitch"                 {       "value"         "1.100000" }
+                                        "soundlevel"            {       "value"         "72.000000" }
+                                        "distance_max"          {       "value"         "1000.000000" }
+
+
+                                }
+                        }
+                }
+        }
+}
+
+"gachi_hat_suck" 
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "dota_src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "sound1"         "sounds/music/gachi/hat_suck.vsnd"
+                                                }
+                                        }
+                                        "volume"                        {   "value"     "3.500000"  }
+                                        "pitch"                 {       "value"         "1.100000" }
+                                        "soundlevel"            {       "value"         "72.000000" }
+                                        "distance_max"          {       "value"         "1000.000000" }
+
+
+                                }
+                        }
+                }
+        }
+}
+
+"gachi_welcome_club" 
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "dota_src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "sound1"         "sounds/music/gachi/welcome_club.vsnd"
+                                                }
+                                        }
+                                        "volume"                        {   "value"     "3.000000"  }
+                                        "pitch"                 {       "value"         "1.000000" }
+                                        "soundlevel"            {       "value"         "72.000000" }
+                                        "distance_max"          {       "value"         "1000.000000" }
+
+
+                                }
+                        }
+                }
+        }
+}
+
+"gachi_oh_yeah" 
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "dota_src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                        "sound1"         "sounds/music/gachi/oh_yeah.vsnd"
+                                                }
+                                        }
+                                        "volume"                        {   "value"     "4.2500000"  }
+                                        "pitch"                 {       "value"         "1.000000" }
+                                        "soundlevel"            {       "value"         "72.000000" }
+                                        "distance_max"          {       "value"         "1000.000000" }
+
+
+                                }
+                        }
+                }
+        }
+}
+
+"opyat_rabota" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/music/opyat_rabota.vsnd"
+						}
+					}
+					"volume"			{   "value"     "10.500000"  }
+					"pitch"       		{  	"value"   	"1.000000" }
+					"soundlevel"		{	"value"		"72.000000" }
+					"distance_max"		{	"value"		"1000.000000" }
+
+
+				}
+			}
+		}
+	}
+}
+
+"glad_valakas" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/music/glad_valakas.vsnd"
+						}
+					}
+					"volume"			{   "value"     "5.500000"  }
+					"pitch"       		{  	"value"   	"1.000000" }
+					"soundlevel"		{	"value"		"72.000000" }
+					"distance_max"		{	"value"		"600.000000" }
+
+
+				}
+			}
+		}
+	}
+}
+
+"pivko" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/music/pivko.vsnd"
+						}
+					}
+					"volume"			{   "value"     "5.500000"  }
+					"pitch"       		{  	"value"   	"1.000000" }
+					"soundlevel"		{	"value"		"72.000000" }
+					"distance_max"		{	"value"		"600.000000" }
+
+
+				}
+			}
+		}
+	}
+}
+
+"totoro_theme" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/music/totoro_theme.vsnd"
+						}
+					}
+					"volume"			{   "value"     "7.500000"  }
+					"pitch"       		{  	"value"   	"1.000000" }
+					"soundlevel"		{	"value"		"72.000000" }
+					"distance_max"		{	"value"		"600.000000" }
+
+
+				}
+			}
+		}
+	}
+}
+
+"undertale" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/music/undertale.vsnd"
+						}
+					}
+					"volume"			{   "value"     "5.500000"  }
+					"pitch"       		{  	"value"   	"1.000000" }
+					"soundlevel"		{	"value"		"72.000000" }
+					"distance_max"		{	"value"		"600.000000" }
+
+
+				}
+			}
+		}
+	}
+}
+
+"stalker_bandit" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/music/stalker_bandit.vsnd"
+						}
+					}
+					"volume"			{   "value"     "5.500000"  }
+					"pitch"       		{  	"value"   	"1.000000" }
+					"soundlevel"		{	"value"		"72.000000" }
+					"distance_max"		{	"value"		"600.000000" }
+
+
+				}
+			}
+		}
+	}
+}
+
+"spulae_mulae" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/music/spulae_mulae.vsnd"
+						}
+					}
+					"volume"			{   "value"     "4.2500000"  }
+					"pitch"       		{  	"value"   	"1.000000" }
+					"soundlevel"		{	"value"		"72.000000" }
+					"distance_max"		{	"value"		"600.000000" }
+
+				}
+			}
+		}
+	}
+}
+"Roshan.Death"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_addon_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/music/minirosh_death.vsnd"
+						}
+					}
+					"volume_min"
+					{
+						"value"		"0.799805"
+					}
+					"volume_max"
+					{
+						"value"		"0.799805"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
+					"memory_type"
+					{
+						"value"		"0"
+					}
+					"soundlevel_min"
+					{
+						"value"		"75.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"75.000000"
+					}
+				}
+			}
+		}
+	}
+}
+"Creature.FireBreath.Cast"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_addon_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/music/mini_rosh_firebreath.vsnd"
+						}
+					}
+					"volume_min"
+					{
+						"value"		"1.000000"
+					}
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"0.950000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
+					"memory_type"
+					{
+						"value"		"0"
+					}
+					"soundlevel_min"
+					{
+						"value"		"90.000000"
+					}
+					"soundlevel_max"
+					{
+						"value"		"90.000000"
+					}
+				}
+			}
+		}
+	}
+}
+"wk_reincarnate"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_default"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/music/wk_reincarnate.vsnd"
+						}
+					}					
+					"volume"
+					{
+						"value" "3.000000"
+					}
+					"pitch_min"
+					{
+							"value"         "1.000000"
+					}
+					"pitch_max"
+					{
+							"value"         "1.000000"
+					}
+					"chan_type"
+					{
+							"value"         "0"
+					}
+					"memory_type"
+					{
+							"value"         "0"
+					}
+				}
+			}
+		}
+	}
+}
+"sonic_race"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_default"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/music/sonic_race.vsnd"
+						}
+					}					
+					"volume"
+					{
+						"value" "1.000000"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
+					"memory_type"
+					{
+						"value"		"0"
+					}
+					"soundlevel"
+					{
+						"value" "78.000000"
+					}
+					"spread_radius"
+					{
+						"value"		"1200.000000"
+					}
+				}
+			}
+		}
+	}
+}
+"sonic_minirace"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_default"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/music/sonic_minirace.vsnd"
+						}
+					}					
+					"volume"
+					{
+						"value" "1.000000"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
+					"memory_type"
+					{
+						"value"		"0"
+					}
+					"soundlevel"
+					{
+						"value" "78.000000"
+					}
+					"spread_radius"
+					{
+						"value"		"1200.000000"
+					}
+				}
+			}
+		}
+	}
+}
+
+"tangin_iron_curtain" 
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "dota_src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                    "sound1"         "sounds/weapons/hero/chaos_knight/taunt_ti9.vsnd"
+                                                }
+                                        }
+                                        "volume"                {   	"value"     	"7.500000"  }
+                                        "pitch"                 {       "value"         "1.000000" }
+                                        "soundlevel"            {       "value"         "72.000000" }
+                                        "distance_max"          {       "value"         "2000.000000" }
+
+
+                                }
+                        }
+                }
+        }
+}
+
+"jotaro_absolute_defense" 
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "dota_src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                    "sound1"         "sounds/heroes/jotaro/absolute_defense.vsnd"
+                                                }
+                                        }
+                                        "volume"                {   	"value"     	"3.500000"  }
+                                        "pitch"                 {       "value"         "1.000000" }
+                                        "soundlevel"            {       "value"         "72.000000" }
+                                        "distance_max"          {       "value"         "1000.000000" }
+
+
+                                }
+                        }
+                }
+        }
+}
+
+"jotaro_ora_ora_rush" 
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "dota_src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                    "sound1"         "sounds/heroes/jotaro/ora_ora_rush.vsnd"
+                                                }
+                                        }
+                                        "volume"                {   	"value"     	"7.500000"  }
+                                        "pitch"                 {       "value"         "1.000000" }
+                                        "soundlevel"            {       "value"         "72.000000" }
+                                        "distance_max"          {       "value"         "1000.000000" }
+                                }
+                        }
+                }
+        }
+}
+
+"jotaro_star_finger" 
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "dota_src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                    "sound1"         "sounds/heroes/jotaro/star_finger.vsnd"
+                                                }
+                                        }
+                                        "volume"                {   	"value"     	"6.500000"  }
+                                        "pitch"                 {       "value"         "1.000000" }
+                                        "soundlevel"            {       "value"         "72.000000" }
+                                        "distance_max"          {       "value"         "1000.000000" }
+                                }
+                        }
+                }
+        }
+}
+
+"jotaro_counterattack" 
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "dota_src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                    "sound1"         "sounds/heroes/jotaro/counterattack.vsnd"
+                                                }
+                                        }
+                                        "volume"                {   	"value"     	"3.500000"  }
+                                        "pitch"                 {       "value"         "1.000000" }
+                                        "soundlevel"            {       "value"         "72.000000" }
+                                        "distance_max"          {       "value"         "1000.000000" }
+                                }
+                        }
+                }
+        }
+}
+
+"jotaro_zawarudo_start" 
+{
+        "operator_stacks"
+        {
+                "update_stack"
+                {
+                        "reference_operator"
+                        {
+                                "operator"              "sos_reference_stack"
+                                "reference_stack"               "dota_src1_3d"
+                                "operator_variables"
+                                {
+                                        "vsnd_files"
+                                        {
+                                                "value"
+                                                {
+                                                    "sound1"         "sounds/heroes/jotaro/zawarudo_start.vsnd"
+                                                }
+                                        }
+                                        "volume"                {   	"value"     	"7.500000"  }
+                                        "pitch"                 {       "value"         "1.000000" }
+                                        "soundlevel"            {       "value"         "72.000000" }
+                                        "distance_max"          {       "value"         "1000.000000" }
+                                }
+                        }
+                }
+        }
+}
+
+"jotaro_zawarudo_end" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+						"vsnd_files"
+						{
+								"value"
+								{
+									"sound1"         "sounds/heroes/jotaro/zawarudo_end.vsnd"
+								}
+						}
+						"volume"                {   	"value"     	"5.500000"  }
+						"pitch"                 {       "value"         "1.000000" }
+						"soundlevel"            {       "value"         "72.000000" }
+						"distance_max"          {       "value"         "1500.000000" }
+				}
+			}
+		}
+	}
+}
+
+"dyadya_vova1"  
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+						"vsnd_files"
+						{
+								"value"
+								{
+									"sound1"         "sounds/wd_music/dyadya_vova1.vsnd"
+								}
+						}
+						"volume"                {   	"value"     	"5.500000"  }
+						"pitch"                 {       "value"         "1.000000" }
+						"soundlevel"            {       "value"         "72.000000" }
+						"distance_max"          {       "value"         "1500.000000" }
+				}
+			}
+		}
+	}
+}
+
+"dyadya_vova2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+						"vsnd_files"
+						{
+								"value"
+								{
+									"sound1"         "sounds/wd_music/dyadya_vova2.vsnd"
+								}
+						}
+						"volume"                {   	"value"     	"5.500000"  }
+						"pitch"                 {       "value"         "1.000000" }
+						"soundlevel"            {       "value"         "72.000000" }
+						"distance_max"          {       "value"         "1500.000000" }
+				}
+			}
+		}
+	}
+}
+
+"dyadya_vova3" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+						"vsnd_files"
+						{
+								"value"
+								{
+									"sound1"         "sounds/wd_music/dyadya_vova3.vsnd"
+								}
+						}
+						"volume"                {   	"value"     	"5.500000"  }
+						"pitch"                 {       "value"         "1.000000" }
+						"soundlevel"            {       "value"         "72.000000" }
+						"distance_max"          {       "value"         "1500.000000" }
+				}
+			}
+		}
+	}
+}
+
+"gluttony_music" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+						"vsnd_files"
+						{
+								"value"
+								{
+									"sound1"         "sounds/wd_music/gluttony_music.vsnd"
+								}
+						}
+						"volume"                {   	"value"     	"5.500000"  }
+						"pitch"                 {       "value"         "1.000000" }
+						"soundlevel"            {       "value"         "72.000000" }
+						"distance_max"          {       "value"         "1500.000000" }
+				}
+			}
+		}
+	}
+}
+
+"greed_music" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+						"vsnd_files"
+						{
+								"value"
+								{
+									"sound1"         "sounds/wd_music/greed_music.vsnd"
+								}
+						}
+						"volume"                {   	"value"     	"5.500000"  }
+						"pitch"                 {       "value"         "1.000000" }
+						"soundlevel"            {       "value"         "72.000000" }
+						"distance_max"          {       "value"         "1500.000000" }
+				}
+			}
+		}
+	}
+}
+
+"pride_music" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+						"vsnd_files"
+						{
+								"value"
+								{
+									"sound1"         "sounds/wd_music/pride_music.vsnd"
+								}
+						}
+						"volume"                {   	"value"     	"5.500000"  }
+						"pitch"                 {       "value"         "1.000000" }
+						"soundlevel"            {       "value"         "72.000000" }
+						"distance_max"          {       "value"         "1500.000000" }
+				}
+			}
+		}
+	}
+}
+
+"envy_music" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+						"vsnd_files"
+						{
+								"value"
+								{
+									"sound1"         "sounds/wd_music/envy_music.vsnd"
+								}
+						}
+						"volume"                {   	"value"     	"5.500000"  }
+						"pitch"                 {       "value"         "1.000000" }
+						"soundlevel"            {       "value"         "72.000000" }
+						"distance_max"          {       "value"         "1500.000000" }
+				}
+			}
+		}
+	}
+}
+
+"sloth_music" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+						"vsnd_files"
+						{
+								"value"
+								{
+									"sound1"         "sounds/wd_music/sloth_music.vsnd"
+								}
+						}
+						"volume"                {   	"value"     	"5.500000"  }
+						"pitch"                 {       "value"         "1.000000" }
+						"soundlevel"            {       "value"         "72.000000" }
+						"distance_max"          {       "value"         "1500.000000" }
+				}
+			}
+		}
+	}
+}
+
+"wrath_music" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+						"vsnd_files"
+						{
+								"value"
+								{
+									"sound1"         "sounds/wd_music/wrath_music.vsnd"
+								}
+						}
+						"volume"                {   	"value"     	"5.500000"  }
+						"pitch"                 {       "value"         "1.000000" }
+						"soundlevel"            {       "value"         "72.000000" }
+						"distance_max"          {       "value"         "1500.000000" }
+				}
+			}
+		}
+	}
+} 
+
+"lust_music" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/lust_music.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "5.500000"  }
+					"pitch"                 {       "value"      "1.000000" }
+					"soundlevel"            {       "value"     "72.000000" }
+					"distance_max"          {       "value"     "1500.000000" }
+				}
+			}
+		}
+	}
+}
+
+"igor_doroga1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/igor_doroga1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "85.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"igor_doroga2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/igor_doroga2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "85.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"igor_doroga3" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/igor_doroga3.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "85.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"igor_doroga4" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/igor_doroga4.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "2.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "85.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"jojo_op_1" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/jojo_op_1.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "3.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "85.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"jojo_op_2" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/jojo_op_2.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "3.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "85.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+ 
+"fly_mach" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+							"value"
+							{
+								"sound1"         "sounds/wd_music/fly_mach.vsnd"
+							}
+					}
+					"volume"                {   	"value"     "3.500000"  }
+					"pitch"                 {       "value"     "1.000000" }
+					"soundlevel"            {       "value"     "85.000000" }
+					"distance_max"          {       "value"     "1000.000000" }
+				}
+			}
+		}
+	}
+}
+
+"jump_up" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/winter_event/jump_up.vsnd"}
+					"volume"                {   	"value"     "1.5"}
+					"pitch"                 {       "value"     "1"}
+					"soundlevel"            {       "value"     "80"}
+					"spread_radius"         {       "value"     "1000"}
+				}
+			}
+		}
+	}
+}
+
+"jump_down" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/winter_event/jump_down.vsnd"}
+					"volume"                {   	"value"     "1.5"}
+					"pitch"                 {       "value"     "1"}
+					"soundlevel"            {       "value"     "80"}
+					"spread_radius"         {       "value"     "1000"}
+					"mixgroup"				{		"value"		"Weapons"}
+				}
+			}
+		}
+	}
+}
+ 
+"jump_side" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/winter_event/jump_side.vsnd"}
+					"volume"                {   	"value"     "1.5"}
+					"pitch"                 {       "value"     "1"}
+					"soundlevel"            {       "value"     "80"}
+					"spread_radius"         {       "value"     "1000"}
+					"mixgroup"				{		"value"		"Weapons"}
+				}
+			}
+		}
+	}
+}
+ 
+"shotgunner_attack" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/weapons/hero/sniper/sniper_assassinate.vsnd"}
+					"volume"                {   	"value"     "1"}
+					"pitch"                 {       "value"     "1"}
+					"soundlevel"            {       "value"     "85"}
+					"spread_radius"         {       "value"     "1000"}
+					"mixgroup"				{		"value"		"Weapons"}
+				}
+			}
+		}
+	}
+}
+ 
+"event_gift" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/winter_event/gift.vsnd"}
+					"volume"                {   	"value"     "1.5"}
+					"pitch"                 {       "value"     "1"}
+				}
+			}
+		}
+	}
+}
+ 
+"gate_break" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/winter_event/gate_break.vsnd"}
+					"volume"                {   	"value"     "1.5"}
+					"pitch"                 {       "value"     "1"}
+					"soundlevel"            {       "value"     "80"}
+					"spread_radius"         {       "value"     "1000"}
+					"mixgroup"				{		"value"		"Weapons"}
+				}
+			}
+		}
+	}
+}
+
+"Conquest.FireTrap.Generic" 
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"              "sos_reference_stack"
+				"reference_stack"               "dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"			{		"value"		"sounds/fire_trap.vsnd"}
+					"volume"                {   	"value"     "0.6"}
+					"pitch"                 {       "value"     "1"}
+					"soundlevel"            {       "value"     "75"}
+					"spread_radius"         {       "value"     "1000"}
+					"mixgroup"				{		"value"		"Weapons"}
+				}
+			}
+		}
+	}
+}

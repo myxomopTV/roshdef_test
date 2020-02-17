@@ -1,0 +1,21 @@
+"AddonInfo"
+
+{
+	maps			"roshdef_standart roshdef_turbo roshdef_adventure"
+	"IsPlayable"	"1"
+	"HeroGuidesSupported" "1"
+	"roshdef_standart"
+	{
+					"MaxPlayers"                    "5"
+	}
+	"roshdef_turbo"
+	{
+					"MaxPlayers"                    "5"
+	}
+	"roshdef_adventure"
+	{
+					"MaxPlayers"                    "5"
+	}
+
+
+}

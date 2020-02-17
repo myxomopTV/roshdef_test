@@ -1,0 +1,8 @@
+roshdef_turbo
+{
+	material materials/overviews/roshdef_turbo.vmat
+	pos_x -10240
+	pos_y 10240
+	scale 20.000
+}
+

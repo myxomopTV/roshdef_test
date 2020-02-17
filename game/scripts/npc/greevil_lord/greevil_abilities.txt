@@ -1,0 +1,2329 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+   "greevil_building_destruction"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"             		"ability_lua"
+        "ScriptFile"             		"heroes/hero_greevil_lord/building_destruction"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityTextureName"            "greevil_lord/building_destruction"
+        "MaxLevel"                      "1"			
+	}
+   "greevil_tower_passive"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"             		"ability_lua"
+        "ScriptFile"             		"heroes/hero_greevil_lord/upgrade_tower"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+        "AbilityTextureName"            "greevil_lord/craft_master"
+        "MaxLevel"                      "1"			
+	}
+	"tower_upgrade_2"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilityChannelTime"			"20"
+		"AbilityGoldCost"				"1000"			
+		"UnitName"						"npc_dota_greevil_lord_tower_2"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"UpgradeBuilding"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelUpgradeBuilding"
+			}
+		}
+	}
+
+	"tower_upgrade_3"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilityChannelTime"			"25"
+		"AbilityGoldCost"				"1500"			
+		"UnitName"						"npc_dota_greevil_lord_tower_3"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"UpgradeBuilding"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelUpgradeBuilding"
+			}
+		}
+	}
+
+	"tower_upgrade_4"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"MaxLevel"						"1"
+		"AbilityChannelTime"			"30"
+		"AbilityGoldCost"				"2000"			
+		"UnitName"						"npc_dota_greevil_lord_tower_4"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"UpgradeBuilding"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelUpgradeBuilding"
+			}
+		}
+	}
+
+	"tower_upgrade_fire"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_fire"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"MaxLevel"						"1"
+		"AbilityChannelTime"			"35"
+		"AbilityGoldCost"				"2500"			
+		"UnitName"						"npc_dota_greevil_lord_tower_fire"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"UpgradeBuilding"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelUpgradeBuilding"
+			}
+		}
+	}
+	"tower_upgrade_ice"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_ice"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"MaxLevel"						"1"
+		"AbilityChannelTime"			"35"
+		"AbilityGoldCost"				"2500"			
+		"UnitName"						"npc_dota_greevil_lord_tower_ice"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"UpgradeBuilding"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelUpgradeBuilding"
+			}
+		}
+	}
+	"tower_upgrade_earth"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_earth"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"MaxLevel"						"1"
+		"AbilityChannelTime"			"35"
+		"AbilityGoldCost"				"2500"			
+		"UnitName"						"npc_dota_greevil_lord_tower_earth"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"UpgradeBuilding"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelUpgradeBuilding"
+			}
+		}
+	}
+	"tower_upgrade_storm"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_storm"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"MaxLevel"						"1"
+		"AbilityChannelTime"			"35"
+		"AbilityGoldCost"				"2500"			
+		"UnitName"						"npc_dota_greevil_lord_tower_storm"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"UpgradeBuilding"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelUpgradeBuilding"
+			}
+		}
+	}
+	"upgrade_tower_support_red"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/tower_support_red"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"MaxLevel"						"1"
+		"AbilityChannelTime"			"10"
+		"AbilityGoldCost"				"250"			
+		"UnitName"						"npc_dota_greevil_lord_tower_support_red"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"UpgradeBuilding"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelUpgradeBuilding"
+			}
+		}
+	}
+	"upgrade_tower_support_yellow"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/tower_support_yellow"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"MaxLevel"						"1"
+		"AbilityChannelTime"			"10"
+		"AbilityGoldCost"				"250"			
+		"UnitName"						"npc_dota_greevil_lord_tower_support_yellow"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"UpgradeBuilding"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelUpgradeBuilding"
+			}
+		}
+	}
+	"upgrade_tower_support_green"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/tower_support_green"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"MaxLevel"						"1"
+		"AbilityChannelTime"			"10"
+		"AbilityGoldCost"				"250"			
+		"UnitName"						"npc_dota_greevil_lord_tower_support_green"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"UpgradeBuilding"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelUpgradeBuilding"
+			}
+		}
+	}
+	"upgrade_tower_support_blue"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/tower_support_blue"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"MaxLevel"						"1"
+		"AbilityChannelTime"			"10"
+		"AbilityGoldCost"				"250"			
+		"UnitName"						"npc_dota_greevil_lord_tower_support_blue"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"UpgradeBuilding"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelUpgradeBuilding"
+			}
+		}
+	}
+	"upgrade_tower_support_orange"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/tower_support_orange"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"MaxLevel"						"1"
+		"AbilityChannelTime"			"10"
+		"AbilityGoldCost"				"250"			
+		"UnitName"						"npc_dota_greevil_lord_tower_support_orange"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"UpgradeBuilding"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelUpgradeBuilding"
+			}
+		}
+	}
+	"red_greevil_fireball"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"black_dragon_fireball"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"MaxLevel"						"1"
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"750"
+		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"20"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"500"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"1000"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"5.0"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"burn_interval"			"0.5"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}	
+	"tower_fire_passive"
+	{
+		"BaseClass" 					"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_fire"
+		"AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_HIDDEN"			
+		
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"ai/set_color.lua"
+				"Function"			"SetColor"
+							
+			}
+		}	
+	}
+	"tower_fire_splash"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"							"black_dragon_splash_attack"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_fire"
+		"MaxLevel"						"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"range"			"350"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_percent"			"50"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+	"tower_ice_passive"
+	{
+		"BaseClass" 					"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_ice"
+		"AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"duration"			"4"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"slow"				"-40"
+			}
+		}
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"ai/set_color.lua"
+				"Function"			"SetColor"
+							
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_tower_ice_passive"
+			{
+				"Passive"		"1"
+				"IsHidden"		"1"
+				
+				"OnAttackLanded"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"			"modifier_tower_ice_debuff"
+						"Target"				"TARGET"
+						"Duration"				"%duration"
+					}
+				}
+			}
+			"modifier_tower_ice_debuff"
+			{
+				"StatusEffectName"     "particles/status_fx/status_effect_frost_lich.vpcf"
+				"StatusEffectPriority" "20"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"		"%slow"
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"		"%slow"
+				}
+			}
+		}
+	
+	}
+	"tower_earth_passive"
+	{
+		"BaseClass" 					"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_earth"
+		"AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"dmg_block"			"-25"
+			}
+		}
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"ai/set_color.lua"
+				"Function"			"SetColor"
+							
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_tower_earth_passive"
+			{
+				"Passive"		"1"
+				"IsHidden"		"1"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE"		"%dmg_block"
+				}
+			}
+		}
+	
+	}
+	"tower_storm_passive"
+	{
+		"BaseClass" 					"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_storm"
+		"AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_leshrac/leshrac_lightning_bolt.vpcf"
+			"soundfile"  "soundevents/game_sounds_heroes/game_sounds_leshrac.vsndevts"
+		}
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"trigger_chance"	"10"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"dmg"				"1000"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"stun_duration"		"1"
+			}
+		}
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"ai/set_color.lua"
+				"Function"			"SetColor"
+							
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_tower_storm_passive"
+			{
+				"Passive"		"1"
+				"IsHidden"		"1"
+				
+				"OnAttackLanded"
+				{
+					"Random"
+					{
+						"Chance"			"%trigger_chance"
+						"PseudoRandom" 		"DOTA_PSEUDO_RANDOM_JUGG_CRIT"
+						"OnSuccess"
+						{
+							"RunScript"
+							{
+								"ScriptFile"		"heroes/hero_greevil_lord/tower_storm"
+								"Function"			"PlayParticle"
+											
+							}
+							"FireSound"
+							{
+								"EffectName"		"Hero_Leshrac.Lightning_Storm"
+								"Target"			"TARGET"
+							}
+							"Damage"
+							{
+								"Target"  "TARGET"
+								"Type"    "DAMAGE_TYPE_MAGICAL"
+								"Damage"  "%dmg"
+							}
+
+						}
+					}
+				}
+			}
+
+		}
+	
+	}
+	"upgrade_to_bank"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/passive_bank_interest"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		"MaxLevel"						"1"
+		"AbilityChannelTime"			"5"
+		"AbilityGoldCost"				"500"			
+		"UnitName"						"npc_dota_greevil_lord_bank"
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"UpgradeBuilding"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"CancelUpgradeBuilding"
+			}
+		}
+	}
+	"passive_bank_interest"
+	{
+		"BaseClass" 					"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/passive_bank_interest"
+		"AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+		"MaxLevel"						"9"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"gold_per_tick"		"1 3 6 10 15 25 50 100 250"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"interval"			"1"
+			}
+		}
+
+		"Modifiers"
+		{
+			"modifier_passive_bank_interest"
+			{
+				"IsHidden"		"1"
+				"Passive"		"1"
+				
+				"OnCreated"
+				{
+					"RunScript"
+					{
+						"ScriptFile"		"heroes/hero_greevil_lord/bank"
+						"Function"			"BankCreated"							
+					}
+				}
+				"ThinkInterval"		"%interval"
+				"OnIntervalThink"
+				{
+					"RunScript"
+					{
+						"ScriptFile"		"heroes/hero_greevil_lord/bank"
+						"Function"			"GiveGoldPerTick"							
+					}					
+				}
+			}
+		}	
+	}
+	"upgrade_bank"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_bank"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"8"
+
+		"AbilityGoldCost"				"1200 1800 2400 3000 6000 15000 30000 99999"			
+		"AbilityChannelTime"			"%upgrade_time"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"gold_cost"			"1200 1800 2400 3000 6000 15000 30000 99999"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"upgrade_time"		"10 20 30 40 50 60 80 120"
+			}
+		}
+		
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/hero_greevil_lord/bank"
+				"Function"		"UpgradeBank"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/hero_greevil_lord/bank"
+				"Function"		"CancelUpgrade"
+			}
+		}
+	}
+	"upgrade_passive_tower_support"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_support"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"4"
+
+		"AbilityChannelTime"			"%upgrade_time"
+		"AbilityGoldCost"				"4000 6000 8000"			
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"gold_cost"			"4000 6000 8000"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"upgrade_time"		"60 90 120"
+			}
+		}
+
+		"OnChannelSucceeded"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/hero_greevil_lord/tower_support"
+				"Function"		"UpgradeAbility"
+			}
+		}
+		"OnChannelInterrupted"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"heroes/hero_greevil_lord/tower_support"
+				"Function"		"CancelUpgrade"
+			}
+		}
+	}
+	"passive_tower_support_red"
+	{
+		"BaseClass" 					"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/tower_support_red"
+		"AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_value"		"10 20 30 40"
+			}
+		}
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"ai/set_color.lua"
+				"Function"			"SetColor"							
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_passive_tower_support_red_aura"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+
+				"Aura"          	"modifier_passive_tower_support_red"
+				"Aura_Radius"   	"30000"
+				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+				"Aura_ApplyToCaster"	"0"
+			}
+			"modifier_passive_tower_support_red"
+			{
+				"IsHidden"		"0"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE"		"%bonus_value"
+				}
+			}
+		}	
+	}
+	"passive_tower_support_yellow"
+	{
+		"BaseClass" 					"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/tower_support_yellow"
+		"AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_value"		"20 40 60 80"
+			}
+		}
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"ai/set_color.lua"
+				"Function"			"SetColor"							
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_passive_tower_support_yellow_aura"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+
+				"Aura"          	"modifier_passive_tower_support_yellow"
+				"Aura_Radius"   	"30000"
+				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+				"Aura_ApplyToCaster"	"0"
+			}
+			"modifier_passive_tower_support_yellow"
+			{
+				"IsHidden"		"0"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"		"%bonus_value"
+				}
+			}
+		}	
+	}
+	"passive_tower_support_green"
+	{
+		"BaseClass" 					"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/tower_support_green"
+		"AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"bonus_value"		"0.2 0.4 0.6 0.8"
+			}
+		}
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"ai/set_color.lua"
+				"Function"			"SetColor"							
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_passive_tower_support_green_aura"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+
+				"Aura"          	"modifier_passive_tower_support_green"
+				"Aura_Radius"   	"30000"
+				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+				"Aura_ApplyToCaster"	"0"
+			}
+			"modifier_passive_tower_support_green"
+			{
+				"IsHidden"		"0"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE"		"%bonus_value"
+				}
+			}
+		}	
+	}
+	"passive_tower_support_blue"
+	{
+		"BaseClass" 					"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/tower_support_blue"
+		"AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_value"		"4 6 8 10"
+			}
+		}
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"ai/set_color.lua"
+				"Function"			"SetColor"							
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_passive_tower_support_blue_aura"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+
+				"Aura"          	"modifier_passive_tower_support_blue"
+				"Aura_Radius"   	"30000"
+				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+				"Aura_ApplyToCaster"	"0"
+			}
+			"modifier_passive_tower_support_blue"
+			{
+				"IsHidden"		"0"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS"		"%bonus_value"
+				}
+			}
+		}	
+	}
+	"passive_tower_support_orange"
+	{
+		"BaseClass" 					"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/tower_support_orange"
+		"AbilityBehavior" 				"DOTA_ABILITY_BEHAVIOR_PASSIVE"			
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_value"		"30 60 90 120"
+			}
+		}
+		"OnCreated"
+		{
+			"RunScript"
+			{
+				"ScriptFile"		"ai/set_color.lua"
+				"Function"			"SetColor"							
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_passive_tower_support_orange_aura"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+
+				"Aura"          	"modifier_passive_tower_support_orange"
+				"Aura_Radius"   	"30000"
+				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"    	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_Flags"    	"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+				"Aura_ApplyToCaster"	"0"
+			}
+			"modifier_passive_tower_support_orange"
+			{
+				"IsHidden"		"0"
+				
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT"		"%bonus_value"
+				}
+			}
+		}	
+	}
+
+	"spawn_unit_weak"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/hero_greevil_lord/spawn_unit"
+		"AbilityTextureName"			"greevil_lord/spawn_unit_weak"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"100"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spawn_time"			"1"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_hp"				"600"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_dmg"				"40"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_armor"			"4"
+			}			
+		}
+	}
+	"spawn_unit_medium"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/hero_greevil_lord/spawn_unit"
+		"AbilityTextureName"			"greevil_lord/spawn_unit_medium"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"200"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spawn_time"			"1"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_hp"				"1500"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_dmg"				"100"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_armor"			"9"
+			}			
+		}
+	}
+	
+	"spawn_unit_strong"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/hero_greevil_lord/spawn_unit"
+		"AbilityTextureName"			"greevil_lord/spawn_unit_strong"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"350"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"spawn_time"			"1"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_hp"				"2500"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_dmg"				"200"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_armor"			"16"
+			}			
+		}
+	}
+
+	"upgrade_attack"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/upgrade_unit"
+	}
+	
+	"upgrade_unit_attack"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/hero_greevil_lord/upgrade_unit"
+		"AbilityTextureName"			"greevil_lord/upgrade_unit_attack"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilitySpecial"
+		{
+			"00"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_upgrade"			"100"
+			}
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"200"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost_up"			"50"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time"			"30"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time_up"		"0"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_value"			"15"
+			}			
+		}
+	}
+	"upgrade_unit_speed"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/hero_greevil_lord/upgrade_unit"
+		"AbilityTextureName"			"greevil_lord/upgrade_unit_speed"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilitySpecial"
+		{
+			"00"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_upgrade"			"100"
+			}
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"200"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost_up"			"50"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time"			"30"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time_up"		"0"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_value1"			"10"	//attack speed
+			}			
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_value2"			"10"	//move speed
+			}			
+		}
+	}
+	
+	"upgrade_unit_body"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/hero_greevil_lord/upgrade_unit"
+		"AbilityTextureName"			"greevil_lord/upgrade_unit_body"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilitySpecial"
+		{
+			"00"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_upgrade"			"45"
+			}
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"200"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost_up"			"50"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time"			"30"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time_up"		"0"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_value0"		"2"		//armor
+			}			
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_value1"		"100"		//melee
+			}			
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_value2"		"150"		//ranged
+			}			
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_value3"		"250"		//strong
+			}			
+		}
+	}
+	"upgrade_unit_health"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/hero_greevil_lord/upgrade_unit"
+		"AbilityTextureName"			"greevil_lord/upgrade_unit_health"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilitySpecial"
+		{
+			"00"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_upgrade"			"20"
+			}
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"400"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost_up"			"100"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time"			"30"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time_up"		"3"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_value"			"10"
+			}			
+		}
+	}
+	"upgrade_tower_health"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/hero_greevil_lord/upgrade_tower"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_health"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilitySpecial"
+		{
+			"00"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_upgrade"			"40"
+			}
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"200"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost_up"			"50"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time"			"25"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time_up"		"3"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_value"			"15"
+			}			
+		}
+	}
+	"upgrade_tower_armor"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/hero_greevil_lord/upgrade_tower"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_armor"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilitySpecial"
+		{
+			"00"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_upgrade"			"35"
+			}
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"200"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost_up"			"50"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time"			"30"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time_up"		"0"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_value"			"3"
+			}			
+		}
+	}	
+	"upgrade_tower_attack"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/hero_greevil_lord/upgrade_tower"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_attack"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilitySpecial"
+		{
+			"00"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_upgrade"			"100"
+			}
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"200"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost_up"			"50"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time"			"30"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time_up"		"0"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_value"			"30"
+			}			
+		}
+	}
+	"upgrade_tower_speed"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"heroes/hero_greevil_lord/upgrade_tower"
+		"AbilityTextureName"			"greevil_lord/upgrade_tower_speed"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+
+		"AbilitySpecial"
+		{
+			"00"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_upgrade"			"100"
+			}
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"200"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost_up"			"50"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time"			"30"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_time_up"		"0"
+			}			
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"upgrade_value"			"10"
+			}			
+		}
+	}
+	"build_chest"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/build_bank"
+		"MaxLevel"						"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCastPoint"				"0"
+		
+		// BuildingHelper info
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"10.0"
+		"AbilityCastRange"				"100"
+		"UpdateHealth"					"1" //bool
+		"PlayerCanControl"				"1" //bool
+	
+		"UnitName"						"npc_dota_greevil_lord_chest"
+		"AbilityCooldown"				"0"
+		"AbilityGoldCost"				"100"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"build_time"			"5.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"10"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"lumber_cost"			"0"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"required_lvl"			"0"
+			}			
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+				
+			}
+		}
+	}
+	"build_egg_weak"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/build_egg_weak"
+		"MaxLevel"						"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCastPoint"				"0"
+		
+		// BuildingHelper info
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"30.0"
+		"AbilityCastRange"				"100"
+		"UpdateHealth"					"1" //bool
+		"PlayerCanControl"				"1" //bool
+	
+		"UnitName"						"npc_dota_greevil_lord_egg_weak"
+		"AbilityCooldown"				"0"
+		"AbilityGoldCost"				"500"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"build_time"			"5.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"10"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"lumber_cost"			"0"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"required_lvl"			"0"
+			}			
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+				
+			}
+		}
+	}
+	"build_egg_medium"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/build_egg_medium"
+		"MaxLevel"						"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCastPoint"				"0"
+		
+		// BuildingHelper info
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"30.0"
+		"AbilityCastRange"				"100"
+		"UpdateHealth"					"1" //bool
+		"PlayerCanControl"				"1" //bool
+	
+		"UnitName"						"npc_dota_greevil_lord_egg_medium"
+		"AbilityCooldown"				"0"
+		"AbilityGoldCost"				"1250"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"build_time"			"5.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"10"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"lumber_cost"			"0"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"required_lvl"			"2"
+			}			
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+				
+			}
+		}
+	}
+	"build_egg_strong"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/build_egg_strong"
+		"MaxLevel"						"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCastPoint"				"0"
+		
+		// BuildingHelper info
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"30.0"
+		"AbilityCastRange"				"100"
+		"UpdateHealth"					"1" //bool
+		"PlayerCanControl"				"1" //bool
+	
+		"UnitName"						"npc_dota_greevil_lord_egg_strong"
+		"AbilityCooldown"				"0"
+		"AbilityGoldCost"				"2500"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"build_time"			"5.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"10"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"lumber_cost"			"0"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"required_lvl"			"5"
+			}			
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+				
+			}
+		}
+	}
+	"build_tower"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/build_tower"
+		"MaxLevel"						"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCastPoint"				"0"
+		
+		// BuildingHelper info
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"15.0"
+		"AbilityCastRange"				"100"
+		"UpdateHealth"					"1" //bool
+		"PlayerCanControl"				"1" //bool
+	
+		"UnitName"						"npc_dota_greevil_lord_tower_1"
+		"AbilityCooldown"				"0"
+		"AbilityGoldCost"				"750"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"build_time"			"5.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"10"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"lumber_cost"			"0"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"required_lvl"			"1"
+			}			
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+				
+			}
+		}
+	}
+	"build_tower_upgrader"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/build_tower_upgrader"
+		"MaxLevel"						"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCastPoint"				"0"
+		
+		// BuildingHelper info
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"20.0"
+		"AbilityCastRange"				"100"
+		"UpdateHealth"					"1" //bool
+		"PlayerCanControl"				"1" //bool
+	
+		"UnitName"						"npc_dota_greevil_lord_tower_upgrader"
+		"AbilityCooldown"				"0"
+		"AbilityGoldCost"				"2000"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"build_time"			"5.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"10"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"lumber_cost"			"0"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"required_lvl"			"4"
+			}			
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+				
+			}
+		}
+	}
+	"build_tower_support"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/build_tower_support"
+		"MaxLevel"						"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCastPoint"				"0"
+		
+		// BuildingHelper info
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"60.0"
+		"AbilityCastRange"				"100"
+		"UpdateHealth"					"1" //bool
+		"PlayerCanControl"				"1" //bool
+	
+		"UnitName"						"npc_dota_greevil_lord_tower_support"
+		"AbilityCooldown"				"0"
+		"AbilityGoldCost"				"2000"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"build_time"			"5.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"10"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"lumber_cost"			"0"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"required_lvl"			"5"
+			}			
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+				
+			}
+		}
+	}
+	"build_tent_upgrader"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"greevil_lord/build_tent"
+		"MaxLevel"						"1"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCastPoint"				"0"
+		
+		// BuildingHelper info
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"20.0"
+		"AbilityCastRange"				"100"
+		"UpdateHealth"					"1" //bool
+		"PlayerCanControl"				"1" //bool
+	
+		"UnitName"						"npc_dota_greevil_lord_tent_upgrader"
+		"AbilityCooldown"				"0"
+		"AbilityGoldCost"				"1500"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"build_time"			"5.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_cost"				"10"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"lumber_cost"			"0"
+			}			
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"required_lvl"			"3"
+			}			
+		}
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+				
+			}
+		}
+	}
+	"greevil_lord_create_worker"
+	{
+		"BaseClass"				"ability_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityTextureName"	"greevil_lord/create_worker"
+		"MaxLevel"				"1"
+
+        "AbilityCooldown"               "60"
+        "AbilityManaCost"               "75"
+		
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"			"heroes/hero_greevil_lord/craft_master"
+				"Function"				"CreateWorker"
+			}
+		}	
+	}
+
+    "greevil_lord_spawn_squad"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"             		"ability_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityTextureName"            "greevil_lord/spawn_squad"
+        "RequiredLevel"                 "1"
+        "LevelsBetweenUpgrades"         "3"
+        "MaxLevel"                      "7"
+ 
+        "AbilityCastAnimation"      "ACT_DOTA_CAPTURE"
+
+		"AbilityCastRange"				"350"
+
+        // Time    
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "30"
+ 
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "75 100 125 150 200 250 300"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+ 
+            "01"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "duration"           		"45"
+            }
+            "02"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "base_hp"           		"300 450 600 750 1000 1250 1500"
+            }
+            "03"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "base_dmg"          		"15 25 35 45 60 75 90"
+            }
+            "04"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "base_armor"        		"1 2 3 4 6 8 10"
+            }
+            "05"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "unit_count"        		"6"
+            }
+        }
+ 
+        "OnSpellStart"
+        {        
+            "RunScript"
+            {
+                "ScriptFile"    "heroes/hero_greevil_lord/spawn_squad.lua"
+                "Function"      "SpawnSquad"
+			}
+        }
+		
+	}
+   "greevil_lord_spawn_healer"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"            			 "ability_lua"
+        "ScriptFile"           			 "heroes/hero_greevil_lord/spawn_healer"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityTextureName"            "greevil_lord/spawn_healer"
+        "RequiredLevel"                 "1"
+        "LevelsBetweenUpgrades"         "3"
+        "MaxLevel"                      "7"
+ 
+        // Time    
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "60"
+	
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "100 150 200 250 350 450 550"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+ 
+            "01"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "duration"           		"20"
+            }
+            "02"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "aura_radius"           	"400"
+            }
+            "03"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "hp_reg"       			 	"20 30 40 50 70 90 110"
+            }
+            "04"
+            {
+                "var_type"                  "FIELD_FLOAT"
+                "hp_reg_pct"       			"0.5"
+            }
+
+        }
+ 
+		"OnSpellStart"
+		{
+			"SpawnUnit"
+			{
+				"UnitName"			"npc_dota_greevil_lord_unit_healer"
+				"Target"			"CASTER"	
+				"UnitCount"			"1"
+				"Duration"			"%duration"
+
+				"OnSpawn"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_phased"
+						"Target"		"TARGET"
+						"Duration"		"0.03"
+					}
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_greevil_healer_aura"
+						"Target"		"TARGET"
+					}
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_greevil_unit_upgrade"
+						"Target"		"TARGET"
+					}
+				}
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_greevil_healer_aura"
+			{
+				"IsHidden"				"1"
+				"Passive"				"0"
+				
+				"Aura"					"modifier_greevil_healer_buff"
+				"Aura_Radius"			"%aura_radius"
+				"Aura_Teams"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				"Aura_ApplyToCaster"	"1"
+				
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"Target"			"TARGET"
+						"EffectName"		"particles/econ/items/juggernaut/jugg_fortunes_tout/jugg_healling_ward_fortunes_tout_ward.vpcf"
+						"EffectAttachType"	"follow_origin"
+						
+						"ControlPoints"
+						{
+							"00"	"0 0 0"
+						}
+					}
+				}			
+			}
+			
+			"modifier_greevil_healer_buff"
+			{
+				"IsHidden"				"0"
+				"Passive"				"0"
+			
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT"	"%hp_reg"
+//					"MODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE"	"%hp_reg_pct"
+				}
+			}
+
+		}			
+	}
+	
+    "greevil_lord_temporary_tower"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"             "ability_datadriven"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
+        "AbilityTextureName"            "greevil_lord/temporary_tower"
+        "RequiredLevel"                 "1"
+        "LevelsBetweenUpgrades"         "3"
+        "MaxLevel"                      "7"
+ 
+        "AbilityCastAnimation"      "ACT_DOTA_CAPTURE"
+
+		"AbilityCastRange"				"150"
+
+        // Time    
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "25"
+ 		"AbilityChannelTime"			"3"
+	
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+       "AbilityManaCost"               "75 100 125 150 200 250 300"
+ 
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+ 
+            "01"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "duration"           		"25 25 25 25 30 35 40"
+            }
+            "02"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "base_hp"           		"750"
+            }
+            "03"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "base_dmg"          		"40 60 80 100 120 140 160"
+            }
+            "04"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "base_armor"        		"5 7 9 11 14 17 20"
+            }
+            "05"
+            {
+                "var_type"                  "FIELD_FLOAT"
+                "base_bat"        			"1.5 1.4 1.3 1.2 1 0.8 0.6"
+            } 
+        }
+ 
+        "OnChannelSucceeded"
+        {       
+            "RunScript"
+            {
+                "ScriptFile"    "heroes/hero_greevil_lord/temporary_tower.lua"
+                "Function"      "BuildTower"
+				"Target"		"POINT"
+            }
+        }
+
+		"Modifiers"
+		{
+			"modifier_tower_bonus"
+			{
+				"IsHidden"		"1"
+
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT"			"%base_bat"
+				}
+			}
+		}		
+	}
+   "greevil_lord_craft_master"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"             		"ability_lua"
+        "ScriptFile"             		"heroes/hero_greevil_lord/craft_master"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+        "AbilityTextureName"            "greevil_lord/craft_master"
+        "RequiredLevel"                 "10"
+        "LevelsBetweenUpgrades"         "10"
+        "MaxLevel"                      "5"
+ 
+	
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "cd_reduce"           		"5 10 15 20 25"
+            }
+        }			
+	}
+    "greevil_lord_summon_titan"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"             		"ability_lua"
+        "ScriptFile"             		"heroes/hero_greevil_lord/summon_titan"
+        "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT"
+        "AbilityTextureName"            "greevil_lord/summon_titan"
+        "RequiredLevel"                 "75"
+        "LevelsBetweenUpgrades"         "1"
+        "MaxLevel"                      "1"
+ 
+        "AbilityCastAnimation"      "ACT_DOTA_CAPTURE"
+
+		"AbilityCastRange"				"350"
+
+        // Time    
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "240"
+ 		"AbilityCastPoint"				"1"
+	
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "1000"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilitySpecial"
+        {
+ 
+            "02"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "base_hp"           		"15000"
+            }
+            "03"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "base_dmg"          		"1250"
+            }
+            "04"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "base_armor"        		"50"
+            }
+            "05"
+            {
+                "var_type"                  "FIELD_FLOAT"
+                "titan_duration"        	"60"
+            } 
+            "06"
+            {
+                "var_type"                  "FIELD_FLOAT"
+                "interval_growth"        	"0.2"
+            } 
+            "07"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "model_growth"        		"20"
+            } 
+            "08"
+            {
+                "var_type"                  "FIELD_INTEGER"
+                "max_grow"        			"50"
+            } 
+       }
+		
+	}
+
+}

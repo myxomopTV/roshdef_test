@@ -1,0 +1,38 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/game_info.css" />
+	</styles>
+	<Panel class="OverthrowGameInfo">
+		<Panel id="Title">
+			<Label id="TitleName" text="#addon_game_name" />
+		</Panel>
+		<Panel id="GameObjective1" class="InfoRow">
+			<Label id="GameObjectiveText1" html="true" text="#roshdef_game_info_text1" />
+			<Image id="GameObjectiveImage1" src="file://{images}/custom_game/game_info/pic1.png" />
+		</Panel>
+		<Panel id="GameObjective2" class="InfoRow">
+			<Image id="GameObjectiveImage2" src="file://{images}/custom_game/game_info/pic2.png" />
+			<Label id="GameObjectiveText2" html="true" text="#roshdef_game_info_text2" />
+		</Panel>
+		<Label id="GameObjectiveText3" html="true" text="#roshdef_game_info_text3" />
+		<Panel id="GameObjective3" class="InfoRow">
+			<Image id="GameObjectiveImage3" src="file://{images}/custom_game/game_info/pic3.png" />
+		</Panel>
+		<Panel id="GameObjective4" class="InfoRow">
+			<Label id="GameObjectiveText4" html="true" text="#roshdef_game_info_text4" />
+			<Image id="GameObjectiveImage4" src="file://{images}/custom_game/game_info/pic4.png" />
+		</Panel>
+		<Label id="GameObjectiveText5" html="true" text="#roshdef_game_info_text5" />
+		<Panel id="GameObjective5" class="InfoRow">
+			<Image id="GameObjectiveImage5" src="file://{images}/custom_game/game_info/pic5.png" />
+		</Panel>
+		<Panel id="GameObjective6" class="InfoRow">
+			<Image id="GameObjectiveImage6" src="file://{images}/custom_game/game_info/pic6.png" />
+			<Label id="GameObjectiveText6" html="true" text="#roshdef_game_info_text6" />
+		</Panel>
+		
+
+	</Panel>
+</root>
+

@@ -1,0 +1,63 @@
+"itembuilds/test_life_stealer.txt"
+{
+    "author"        "Valve"
+    "hero"          "npc_dota_hero_disruptor"
+    "Title"         "Recommended items for disruptor"
+   
+    "Items"
+    {      
+        "#DOTA_Item_Build_Starting_Items"
+        {
+            "item"      "item_ancient_tango_datadriven_1"
+            "item"      "item_clarity"
+ 
+            "item"      "item_boots"
+            "item"      "item_shield"
+            "item"      "item_mail"
+  
+        }
+       
+        "#DOTA_Item_Build_Early_Game"
+        {  
+            "item"      "item_soul_ring"
+			"item"      "item_imba_ancient_janggo"
+			"item"      "item_imba_vladmir_1"
+			"item"      "item_helm_of_the_dominator"
+            "item"      "item_imba_arcane_boots"
+        }
+       
+        "#DOTA_Item_Build_Mid_Items"           
+        {
+			"item"      "item_imba_vladmir_3"
+            "item"      "item_octarine_core"
+            "item"      "item_kaya2"
+            "item"      "item_imba_siege_cuirass"
+            "item"      "item_refresher"
+            "item"      "item_imba_necronomicon_tank"
+            "item"      "item_imba_necronomicon_auraman"
+           
+        }
+       
+        "#DOTA_Item_Build_Late_Items"          
+        {
+            "item"      "item_ultra_boots"
+            "item"      "item_imba_heart"
+            "item"      "item_imba_guardian_greaves"
+ 
+			"item"      "item_earth_rapier"
+             
+        }
+   
+
+        "#DOTA_Item_Build_Luxury"
+        {
+            "item"      "item_tome_of_knowledge"
+            "item"      "item_imba_moon_shard" 
+            "item"      "item_bonus_strength10"
+            "item"      "item_bonus_agility10"
+            "item"      "item_bonus_intelligence10"
+            "item"      "item_bonus_stats10"
+        }
+   
+    }
+}

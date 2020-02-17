@@ -1,0 +1,370 @@
+.invisible
+{
+	opacity: 0;
+	visibility: collapse;
+	transition-property: opacity;
+	transition-delay: 0.0s;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+}
+
+.disabled
+{
+	saturation: 0.4;
+}
+
+.AddonLoadingRoot
+{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	overflow: clip;
+}
+
+#image_bg 
+{
+  margin-left: 0%;
+
+}
+
+
+
+.ImageBg
+{
+  min-width: 100%;
+  min-height: 100%;
+  visibility: visible;
+}
+
+
+#TitlePanel
+{
+	horizontal-align: left;
+	vertical-align: bottom;
+	margin-bottom: 50px;
+	animation-name: title_animation;
+	animation-delay: 5s;
+	animation-duration: 15s;
+	animation-iteration-count: 12;
+}
+
+@keyframes 'title_animation'
+{
+	50%
+	{
+		pre-transform-scale2d: 1.1;
+	}
+}
+#GameModeDescription
+{
+    font-size: 27px;
+	text-transform: uppercase;
+	color: #cccccc;
+}
+
+#CustomBg
+{
+	width: 100%;
+	height: 100%;
+	overflow: clip;
+	background-repeat: no-repeat;
+	background-position: -275px 0px;
+	background-size: 100% 100%;
+}
+
+#game_options_container
+{
+	width: 22%;
+	height: 100%;
+	background-color: gradient( linear, 100% 0%, 100% 100%, from( #111111 ), color-stop( 0.02, #202327 ), color-stop( 0.3, #141619 ), to( #000000B0 ) );
+	box-shadow: #000000 0px 0px 20px 0px;
+	flow-children: down;
+	visibility: collapse;
+	position: -250px 0px 0px;
+	flow-children:down; 
+}
+
+#community_stuff_container
+{
+	height: 100%;
+	margin-left: 23%;
+}
+
+#CommunityPanel
+{
+	padding-top: 10px;
+	margin-top: 60px;
+	width: 400px;
+	flow-children: down;
+	background-color: gradient( linear, 100% 0%, 100% 100%, from( #111111 ), color-stop( 0.3, #202327 ), color-stop( 0.7, #141619 ), to( #000000B0 ) );
+	transition-property: opacity;
+	transition-delay: 0.0s;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+}
+
+.AspectRatio4x3 #CommunityPanel
+{
+	width: 300px;
+}
+
+/* Show community button */
+#show_community_panel_button
+{
+	margin-top: 10px;
+	width: 400px;
+	height: 40px;
+	background-image: url("s2r://panorama/images/backgrounds/background_play_button_large_2x_png.vtex");
+	background-size: 100% 100%;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #303090FF ), to( #4444D0FF ) );
+	box-shadow: #000000 0px 0px 18px 0px;
+	transition-property: background-color;
+	transition-duration: 0.2s;
+}
+
+.AspectRatio4x3 #show_community_panel_button
+{
+	width: 300px;
+}
+
+#show_community_panel_button:hover
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #4444D0FF ), to( #6464F0FF ) );
+	box-shadow: #000000 0px 0px 25px 0px;
+}
+
+#show_community_panel_button:active
+{
+	transform: translate3d(1px, 1px, 0px);
+	sound: "ui_team_select_lock_and_start";
+}
+
+#show_community_panel_button Label
+{
+	font-size: 24px;
+	horizontal-align: center;
+	vertical-align: center;
+	color: #ffffff;
+}
+
+.Header
+{
+	font-size: 40px;
+	horizontal-align: center;
+	vertical-align: center;
+	color: #ffffff;
+}
+#ToggleButtonContainer{
+	align:center top;
+	margin-top: 40px;
+	flow-children:right;
+	border: 1px solid gray;
+	padding: 5px;
+
+}
+#ToggleInfo{
+	vertical-align: center;
+	horizontal-align:center;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-right: 4px;
+	text-shadow: 12px 0px 8px 4.0 #000000aa;
+}
+#ToggleButton{
+	width: 44px;
+	height: 44px;
+	margin-left: 40px;
+	align:center center;
+	border: 1px solid black;
+	background-color: black;
+	box-shadow:black 0px 0px 8px 0px;
+}
+#ToggleButtonBox.Active{
+	background-image: url('file://{resources}/images/custom_game/speedrun_icon.png');
+	background-size: 100% 100%;
+	opacity: 1;
+}
+#ToggleButtonBox{
+	width: 100%;
+	height: 100%;
+	transition-property: opacity;
+	transition-duration: 0.33s;
+	align:center center;
+	opacity: 0;
+}
+#GameOptionsPanel
+{
+	margin-top: 40px;
+	/*margin-bottom: 270px;*/
+	margin-left: 20px;
+	margin-right: 20px;
+/*	width: 100%;
+	height: 100%;*/
+	flow-children: down;
+	transition-property: opacity;
+	transition-delay: 0.0s;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+}
+
+#game_options_game_mode_title
+{
+	font-size: 32px;
+	color: #FF7800;
+	text-align: center;
+	font-weight: bold;
+	horizontal-align: center;
+}
+
+.GameOptionsSubPanel,
+.GameOptionsLongSubPanel
+{
+    margin-top: 20px;
+	width: 100%;
+}
+
+.GameOptionsSubPanel
+{
+	flow-children: right;
+}
+
+.GameOptionsLongSubPanel
+{
+    flow-children: down;
+}
+
+
+/* Confirm options button */
+#ConfirmOptionsBtn
+{
+	margin-top: 30px;
+	width: 400px;
+	height: 40px;
+	background-image: url("s2r://panorama/images/backgrounds/background_play_button_large_2x_png.vtex");
+	background-size: 100% 100%;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #303090FF ), to( #4444D0FF ) );
+	box-shadow: #000000 0px 0px 18px 0px;
+	transition-property: background-color;
+	transition-duration: 0.2s;
+}
+
+#ConfirmOptionsBtn:hover
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #4444D0FF ), to( #6464F0FF ) );
+	box-shadow: #000000 0px 0px 25px 0px;
+}
+
+#ConfirmOptionsBtn:active
+{
+	transform: translate3d(1px, 1px, 0px);
+	sound: "ui_team_select_lock_and_start";
+}
+
+#ConfirmOptionsBtn Label
+{
+	font-size: 24px;
+	horizontal-align: center;
+	vertical-align: center;
+	color: #ffffff;
+}
+
+/* Confirm options button */
+
+
+#ConfirmOptionsBtn1
+{
+	margin-top: 30px;
+	width: 400px;
+	height: 40px;
+	background-image: url("s2r://panorama/images/backgrounds/background_play_button_large_2x_png.vtex");
+	background-size: 100% 100%;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #207020FF ), to( #28B028FF ) );
+	box-shadow: #000000 0px 0px 15px 0px;
+	transition-property: background-color;
+	transition-duration: 0.2s;
+}
+
+#ConfirmOptionsBtn1:hover
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #28B028FF ), to( #40F040FF ) );
+	box-shadow: #000000 0px 0px 20px 0px;
+}
+
+#ConfirmOptionsBtn1:active
+{
+	transform: translate3d(1px, 1px, 0px);
+	sound: "ui_team_select_lock_and_start";
+}
+
+#ConfirmOptionsBtn1 Label
+{
+	font-size: 24px;
+	horizontal-align: center;
+	vertical-align: center;
+	color: #ffffff;
+}
+#ConfirmOptionsBtn2
+{
+	margin-top: 30px;
+	width: 400px;
+	height: 40px;
+	background-image: url("s2r://panorama/images/backgrounds/background_play_button_large_2x_png.vtex");
+	background-size: 100% 100%;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #702020FF ), to( #B02828FF ) );
+	box-shadow: #000000 0px 0px 15px 0px;
+	transition-property: background-color;
+	transition-duration: 0.2s;
+}
+
+#ConfirmOptionsBtn2:hover
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #B02828FF ), to( #F04040FF ) );
+	box-shadow: #000000 0px 0px 20px 0px;
+}
+
+#ConfirmOptionsBtn2:active
+{
+	transform: translate3d(1px, 1px, 0px);
+	sound: "ui_team_select_lock_and_start";
+}
+
+#ConfirmOptionsBtn2 Label
+{
+	font-size: 24px;
+	horizontal-align: center;
+	vertical-align: center;
+	color: #ffffff;
+}
+#ConfirmOptionsBtn3
+{
+	margin-top: 30px;
+	width: 400px;
+	height: 40px;
+	background-image: url("s2r://panorama/images/backgrounds/background_play_button_large_2x_png.vtex");
+	background-size: 100% 100%;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #702020FF ), to( #B02828FF ) );
+	box-shadow: #000000 0px 0px 15px 0px;
+	transition-property: background-color;
+	transition-duration: 0.2s;
+}
+
+#ConfirmOptionsBtn3:hover
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #B02828FF ), to( #F04040FF ) );
+	box-shadow: #000000 0px 0px 20px 0px;
+}
+
+#ConfirmOptionsBtn3:active
+{
+	transform: translate3d(1px, 1px, 0px);
+	sound: "ui_team_select_lock_and_start";
+}
+
+#ConfirmOptionsBtn3 Label
+{
+	font-size: 24px;
+	horizontal-align: center;
+	vertical-align: center;
+	color: #ffffff;
+}

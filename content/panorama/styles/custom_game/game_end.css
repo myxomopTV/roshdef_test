@@ -1,0 +1,164 @@
+.hud{
+	width: 100%;
+	height: 100%;
+}
+Panel.PlayerRow Label, Panel.PlayerRow DOTAHeroImage{
+	font-size: 26px;
+
+}
+.LastHitsColumn{
+	width: 82px;
+	
+} 
+#NormalMatchPlayers{
+	max-width: 100%;
+	width: 200000px;
+}
+.MMRColumn_custom{
+	width: 120px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+#DisconnectButton
+{
+	width: 330px;
+	height: 33px;
+
+	min-width: 330px;
+	min-height: 48px;
+
+	margin-bottom: 21px;
+	margin-right: 58px;
+
+	padding: 4px 12px 4px 12px;
+
+	vertical-align:bottom;
+	horizontal-align: center;
+	margin-right: 58px;
+
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #722217 ), to( #DD4A29 ) );
+	background-image: url("s2r://panorama/images/backgrounds/background_play_button_2x_png.vtex");
+	background-size: 328px 50px;
+
+	border-top: 1px solid #ffffff05;
+	border-right: 1px solid #00000088;
+	border-left: 1px solid #ffffff05;
+	border-bottom: 1px solid #00000088;
+}
+
+
+#DisconnectButton Image
+{
+	wash-color: red;
+	width: 26px;
+	height: 26px;
+	margin: 2px;
+	margin-left: 6px;
+}
+
+.DisconnectLabel
+{
+	margin-top: 4px;
+	vertical-align: middle;
+	horizontal-align: center;
+}
+
+#DisconnectButton Label
+{
+	text-transform: uppercase;
+	color: white;
+	font-size: 26px;
+	vertical-align: middle;
+	horizontal-align: center;
+}
+
+#DisconnectButton:hover Label
+{
+	color: red;
+}
+
+#DisconnectButton:active
+{
+	sound: "ui_custom_lobby_quit";
+}
+
+Panel.PlayerRow Label.NetWorth{
+	text-align: left;
+}
+Panel.PlayerRow Label.NetWorth{
+	font-size: 26px;
+}
+
+.NetWorthColumn{
+	margin-left: 10px;
+	font-size: 26px;
+	width: 80px;
+}
+.GoldIcon{
+	horizontal-align:right;
+	vertical-align: center;
+}
+#RoshanMMR{
+	color: lime;
+	font-size: 22px;
+}
+.NameAndHero Label{
+	letter-spacing: 0px; 
+	padding-right: 0;
+	font-size: 20px;
+}
+#LoadingContainer{
+	margin-top: 30px;
+	flow-children:right;
+	align:center center;
+}
+#LoadingContainer.bHasServerInfo{
+	visibility: collapse;
+}
+.LoadingSpinner{
+	width: 200px;
+	height: 200px;
+	align:center center;
+	background-image: url("s2r://panorama/images/status_icons/loadingthrobber_round_psd.vtex");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	animation-name: SpinnerRotate;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
+#LoadingContainer > Label{
+	font-size: 44px;
+	text-align: center;
+	color: white;
+	align:center center;
+}
+.AttributeColumn.agi{
+	height: 100%;
+	background-image: url("s2r://panorama/images/hud/reborn/mini_agi_icon_psd.vtex");
+}
+.AttributeColumn.str{
+	height: 100%;
+	background-image: url("s2r://panorama/images/hud/reborn/mini_strength_icon_psd.vtex");
+}
+.AttributeColumn.int{
+	height: 100%;
+	background-image: url("s2r://panorama/images/hud/reborn/mini_int_icon_psd.vtex");
+}
+.AttributeColumn{
+	width: 70px;
+	background-size: 20px 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+
+}
+
+#ItemCooldownTime{
+	margin: 0;
+	text-align: center;
+	align:center center;
+	color: white;
+	font-size: 20px;
+}
